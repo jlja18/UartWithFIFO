@@ -63,7 +63,7 @@ ARCHITECTURE behavior OF test1 IS
    signal RE : std_logic := '0';
    signal rx : std_logic := '1';
    signal reset : std_logic := '0';
-	signal MSB_LSB : STD_LOGIC := '0'; 
+	signal MSB_LSB : STD_LOGIC := '1'; 
 
  	--Outputs
    signal dataOUT : std_logic_vector(7 downto 0);

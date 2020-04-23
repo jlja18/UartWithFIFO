@@ -7,9 +7,10 @@ Parsing VHDL file "E:/GitHub/UartWithFIFO/ipcore_dir/Blockram.vhd" into library 
 Parsing VHDL file "E:/GitHub/UartWithFIFO/uartLogic.vhd" into library work
 Parsing VHDL file "E:/GitHub/UartWithFIFO/FIFOBuffer.vhd" into library work
 Parsing VHDL file "E:/GitHub/UartWithFIFO/UartWithFifo.vhd" into library work
-WARNING:HDLCompiler:946 - "E:/GitHub/UartWithFIFO/UartWithFifo.vhd" Line 124: Actual for formal port reset_n is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:/GitHub/UartWithFIFO/UartWithFifo.vhd" Line 125: Actual for formal port reset_n is neither a static name nor a globally static expression
 Parsing VHDL file "E:/GitHub/UartWithFIFO/test1.vhd" into library work
 Starting static elaboration
+WARNING:HDLCompiler:794 - "E:/GitHub/UartWithFIFO/UartWithFifo.vhd" Line 193: Statement might not cover all choices ; 'others' clause recommended
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
@@ -28,8 +29,7 @@ Compiling architecture logic of entity uart [\uart(1000000,9600,16,8,0,'0')\]
 Compiling architecture behavioral of entity UartWithFifo [uartwithfifo_default]
 Compiling architecture behavior of entity test1
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
 Compiled 25 VHDL Units
 Built simulation executable E:/GitHub/UartWithFIFO/test1_isim_beh.exe
-Fuse Memory Usage: 39204 KB
-Fuse CPU Usage: 608 ms
+Fuse Memory Usage: 38872 KB
+Fuse CPU Usage: 624 ms

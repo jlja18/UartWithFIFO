@@ -97,6 +97,7 @@ signal rxlink_statereg, rxlink_statenext: rxlink_state_type;
 begin
 
 
+
 TXbuffer : FIFObuffer 
 port map(
 	clk => clk,
@@ -123,7 +124,7 @@ port map(
 clk => clk,
 reset_n => not reset,
 tx_ena => tx_ena,
-tx_data => tx_data,
+tx_data => tx_data_conv,
 rx => rx,
 rx_busy => rx_busy,
 rx_error => rx_error, 
@@ -145,31 +146,24 @@ process(txlink_statereg, tx_busy, tx_dataready)
 begin
 	case txlink_statereg is
 		when s0 => 
+			tx_re <='0'; 
 			if (tx_busy = '0' and tx_dataready = '1') then
 				txlink_statenext <= s1; 
+				tx_ena <= '1'; 
 			else 
 				txlink_statenext <= s0;
+				tx_ena <='0';
 			end if; 
 		when S1 =>
 			txlink_statenext <= s2; 
+			tx_ena <= '1'; 
 		when S2 =>
 			txlink_statenext <= s0; 
+			tx_re <='1'; 
 	end case; 
 end process;
 
-process(txlink_statereg)
-begin
-	case txlink_statereg is
-		when s0 =>
-			tx_re <='0'; 
-			tx_ena <= '0'; 
-		when s1 =>
-			tx_ena <= '1'; 
-		when s2 =>
-			tx_ena <= '0'; 
-			tx_re <= '1'; 
-	end case; 
-end process; 
+
 
 -- rx to buffer FSM 
 -- nextstate logic
@@ -195,10 +189,8 @@ begin
 	end case; 
 end process; 
 
--- MSB/LSB converter 
---with MSB_LSB select 
---	tx_data_conv <= tx_data when '0',
---	tx_data_conv <= reverse_vector(tx_data) when '1';
-
-
+--MSB/LSB converter 
+with MSB_LSB select tx_data_conv <=
+	tx_data when '0',
+	reverse_vector(tx_data) when'1'; 
 end Behavioral;
