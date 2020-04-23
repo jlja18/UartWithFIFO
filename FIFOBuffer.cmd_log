@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/GitHub/UartWithFIFO/FIFOBuffer.xst" -ofn "E:/GitHub/UartWithFIFO/FIFOBuffer.syr" 
