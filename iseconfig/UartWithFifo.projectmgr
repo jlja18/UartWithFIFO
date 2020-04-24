@@ -120,13 +120,13 @@
          <ClosedNode>/test1 - behavior E:|GitHub|UartWithFIFO|test1.vhd/uut - UartWithFifo - Behavioral/RXbuffer - FIFOBuffer - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>test1 - behavior (E:/GitHub/UartWithFIFO/test1.vhd)</SelectedItem>
+         <SelectedItem>TXbuffer - FIFOBuffer - Behavioral (E:/GitHub/UartWithFIFO/FIFOBuffer.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000179000000020000000000000000000000000200000064ffffffff000000810000000300000002000001790000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>test1 - behavior (E:/GitHub/UartWithFIFO/test1.vhd)</CurrentItem>
+      <CurrentItem>TXbuffer - FIFOBuffer - Behavioral (E:/GitHub/UartWithFIFO/FIFOBuffer.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>

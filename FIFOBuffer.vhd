@@ -63,8 +63,8 @@ signal wrs, res : STD_LOGIC_vector (0 downto 0) := "0";
 type wr_state_type is (nFull, isFull); 
 type re_state_type is (Empty, nEmpty); 
 
-signal wr_state_reg, wr_state_next : wr_state_type; 
-signal re_state_reg, re_state_next : re_state_type; 
+signal wr_state_reg, wr_state_next : wr_state_type := nFull; 
+signal re_state_reg, re_state_next : re_state_type := nEmpty; 
 
 
 begin
@@ -145,7 +145,7 @@ begin
 			end if; 
 		end if; 
 		
-		if (wrptr + 1 = reptr) then  -- if next wr_ptr is re_ptr, then 
+		if (wrptr + 1 = reptr and we = '1') then  -- if next wr_ptr is re_ptr, then 
 			wr_state_next <= isFull; 	 	
 		else 
 			wr_state_next <= nFull; 
@@ -180,7 +180,7 @@ begin
 				reptr <= reptr + 1;
 			end if; 
 		end if; 
-		if (wrptr = reptr) then 
+		if (wrptr = reptr + 1 and re = '1') then 
 			re_state_next <= empty; 
 		end if; 
 		
