@@ -1,0 +1,36 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Jonas/Desktop/UartWithFIFO-master/echotester_isim_beh.exe" -prj "C:/Users/Jonas/Desktop/UartWithFIFO-master/echotester_beh.prj" "work.echotester" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Jonas/Desktop/UartWithFIFO-master/ipcore_dir/Blockram.vhd" into library work
+Parsing VHDL file "C:/Users/Jonas/Desktop/UartWithFIFO-master/uartLogic.vhd" into library work
+Parsing VHDL file "C:/Users/Jonas/Desktop/UartWithFIFO-master/FIFOBuffer.vhd" into library work
+Parsing VHDL file "C:/Users/Jonas/Desktop/UartWithFIFO-master/UartWithFifo.vhd" into library work
+WARNING:HDLCompiler:946 - "C:/Users/Jonas/Desktop/UartWithFIFO-master/UartWithFifo.vhd" Line 125: Actual for formal port reset_n is neither a static name nor a globally static expression
+Parsing VHDL file "C:/Users/Jonas/Desktop/UartWithFIFO-master/UARTecho.vhd" into library work
+Parsing VHDL file "C:/Users/Jonas/Desktop/UartWithFIFO-master/echotester.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package textio
+Compiling package std_logic_textio
+Compiling architecture output_stage_behavioral of entity BLK_MEM_GEN_V7_3_output_stage [\BLK_MEM_GEN_V7_3_output_stage("...]
+Compiling architecture output_stage_behavioral of entity BLK_MEM_GEN_V7_3_output_stage [\BLK_MEM_GEN_V7_3_output_stage("...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity BLK_MEM_GEN_V7_3_softecc_output_reg_stage [\BLK_MEM_GEN_V7_3_softecc_output...]
+Compiling architecture mem_module_behavioral of entity BLK_MEM_GEN_V7_3_mem_module [\BLK_MEM_GEN_V7_3_mem_module("bl...]
+Compiling architecture behavioral of entity BLK_MEM_GEN_V7_3 [\BLK_MEM_GEN_V7_3("blk_mem_gen_v...]
+Compiling architecture blockram_a of entity Blockram [blockram_default]
+Compiling architecture behavioral of entity FIFOBuffer [fifobuffer_default]
+Compiling architecture logic of entity uart [\uart(1000000,9600,16,8,0,'0')\]
+Compiling architecture behavioral of entity UartWithFifo [uartwithfifo_default]
+Compiling architecture behavioral of entity UARTecho [uartecho_default]
+Compiling architecture behavior of entity echotester
+Time Resolution for simulation is 1ps.
+Compiled 27 VHDL Units
+Built simulation executable C:/Users/Jonas/Desktop/UartWithFIFO-master/echotester_isim_beh.exe
+Fuse Memory Usage: 38992 KB
+Fuse CPU Usage: 702 ms

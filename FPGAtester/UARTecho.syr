@@ -1,0 +1,663 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: UARTecho.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "UARTecho.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "UARTecho"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : UARTecho
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Jonas\Desktop\UartWithFIFO-master\ipcore_dir\Blockram.vhd" into library work
+Parsing entity <Blockram>.
+Parsing architecture <Blockram_a> of entity <blockram>.
+Parsing VHDL file "C:\Users\Jonas\Desktop\UartWithFIFO-master\uartLogic.vhd" into library work
+Parsing entity <uart>.
+Parsing architecture <logic> of entity <uart>.
+Parsing VHDL file "C:\Users\Jonas\Desktop\UartWithFIFO-master\FIFOBuffer.vhd" into library work
+Parsing entity <FIFOBuffer>.
+Parsing architecture <Behavioral> of entity <fifobuffer>.
+Parsing VHDL file "C:\Users\Jonas\Desktop\UartWithFIFO-master\UartWithFifo.vhd" into library work
+Parsing entity <UartWithFifo>.
+Parsing architecture <Behavioral> of entity <uartwithfifo>.
+WARNING:HDLCompiler:946 - "C:\Users\Jonas\Desktop\UartWithFIFO-master\UartWithFifo.vhd" Line 125: Actual for formal port reset_n is neither a static name nor a globally static expression
+Parsing VHDL file "C:\Users\Jonas\Desktop\UartWithFIFO-master\UARTecho.vhd" into library work
+Parsing entity <UARTecho>.
+Parsing architecture <Behavioral> of entity <uartecho>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <UARTecho> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "C:\Users\Jonas\Desktop\UartWithFIFO-master\UARTecho.vhd" Line 61: Using initial value '0' for msb_lsb since it is never assigned
+
+Elaborating entity <UartWithFifo> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <FIFOBuffer> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Blockram> (architecture <Blockram_a>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Jonas\Desktop\UartWithFIFO-master\FIFOBuffer.vhd" Line 139: wr_state_reg should be on the sensitivity list of the process
+
+Elaborating entity <uart> (architecture <logic>) with generics from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Jonas\Desktop\UartWithFIFO-master\uartLogic.vhd" Line 104: os_pulse should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <UARTecho>.
+    Related source file is "C:\Users\Jonas\Desktop\UartWithFIFO-master\UARTecho.vhd".
+INFO:Xst:3210 - "C:\Users\Jonas\Desktop\UartWithFIFO-master\UARTecho.vhd" line 83: Output port <full> of the instance <UARTWithFIFO1> is unconnected or connected to loadless signal.
+    Found 5-bit register for signal <clkcntr>.
+    Found 5-bit adder for signal <clkcntr[4]_GND_5_o_add_0_OUT> created at line 68.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+Unit <UARTecho> synthesized.
+
+Synthesizing Unit <UartWithFifo>.
+    Related source file is "C:\Users\Jonas\Desktop\UartWithFIFO-master\UartWithFifo.vhd".
+INFO:Xst:3210 - "C:\Users\Jonas\Desktop\UartWithFIFO-master\UartWithFifo.vhd" line 111: Output port <Full> of the instance <RXbuffer> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jonas\Desktop\UartWithFIFO-master\UartWithFifo.vhd" line 122: Output port <rx_error> of the instance <uart1> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <rxlink_statenext>.
+    Found 1-bit register for signal <rx_we>.
+    Found 2-bit register for signal <txlink_statereg>.
+    Found finite state machine <FSM_0> for signal <txlink_statereg>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | s0                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 1-bit latch for signal <tx_re>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <tx_ena>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+	inferred   2 Latch(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <UartWithFifo> synthesized.
+
+Synthesizing Unit <FIFOBuffer>.
+    Related source file is "C:\Users\Jonas\Desktop\UartWithFIFO-master\FIFOBuffer.vhd".
+    Found 1-bit register for signal <dataReady>.
+    Found 1-bit register for signal <Full>.
+    Found 6-bit register for signal <wrPTR>.
+    Found 6-bit register for signal <rePTR>.
+    Found 6-bit adder for signal <wrPTR[5]_GND_7_o_add_3_OUT> created at line 148.
+    Found 6-bit adder for signal <rePTR[5]_GND_7_o_add_12_OUT> created at line 183.
+WARNING:Xst:737 - Found 1-bit latch for signal <re_state_next>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 6-bit comparator equal for signal <wrPTR[5]_rePTR[5]_equal_5_o> created at line 148
+    Found 6-bit comparator equal for signal <wrPTR[5]_rePTR[5]_equal_9_o> created at line 172
+    Found 6-bit comparator equal for signal <wrPTR[5]_rePTR[5]_equal_14_o> created at line 183
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  14 D-type flip-flop(s).
+	inferred   1 Latch(s).
+	inferred   3 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <FIFOBuffer> synthesized.
+
+Synthesizing Unit <uart>.
+    Related source file is "C:\Users\Jonas\Desktop\UartWithFIFO-master\uartLogic.vhd".
+        clk_freq = 1000000
+        baud_rate = 9600
+        os_rate = 16
+        d_width = 8
+        parity = 0
+        parity_eo = '0'
+    Found 7-bit register for signal <count_baud>.
+    Found 3-bit register for signal <count_os>.
+    Found 4-bit register for signal <os_count>.
+    Found 4-bit register for signal <rx_count>.
+    Found 4-bit register for signal <tx_count>.
+    Found 8-bit register for signal <rx_data>.
+    Found 1-bit register for signal <tx_busy>.
+    Found 1-bit register for signal <tx>.
+    Found 1-bit register for signal <os_pulse>.
+    Found 1-bit register for signal <rx_busy>.
+    Found 1-bit register for signal <rx_error>.
+    Found 1-bit register for signal <rx_state>.
+    Found 1-bit register for signal <tx_state>.
+    Found 1-bit register for signal <baud_pulse>.
+    Found 9-bit register for signal <rx_buffer>.
+    Found 10-bit register for signal <tx_buffer>.
+    Found 7-bit adder for signal <count_baud[6]_GND_12_o_add_1_OUT> created at line 74.
+    Found 3-bit adder for signal <GND_12_o_GND_12_o_add_5_OUT> created at line 83.
+    Found 4-bit adder for signal <os_count[3]_GND_12_o_add_16_OUT> created at line 124.
+    Found 4-bit adder for signal <rx_count[3]_GND_12_o_add_18_OUT> created at line 128.
+    Found 4-bit adder for signal <tx_count[3]_GND_12_o_add_44_OUT> created at line 176.
+    Found 7-bit comparator greater for signal <count_baud[6]_PWR_9_o_LessThan_1_o> created at line 73
+    Found 3-bit comparator greater for signal <GND_12_o_PWR_9_o_LessThan_5_o> created at line 82
+    Found 4-bit comparator greater for signal <os_count[3]_PWR_9_o_LessThan_10_o> created at line 109
+    Found 4-bit comparator greater for signal <os_count[3]_PWR_9_o_LessThan_16_o> created at line 123
+    Found 4-bit comparator greater for signal <rx_count[3]_PWR_9_o_LessThan_18_o> created at line 126
+    Found 4-bit comparator greater for signal <tx_count[3]_PWR_9_o_LessThan_48_o> created at line 179
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred  57 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred  16 Multiplexer(s).
+Unit <uart> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 10
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 3
+ 5-bit adder                                           : 1
+ 6-bit adder                                           : 4
+ 7-bit adder                                           : 1
+# Registers                                            : 27
+ 1-bit register                                        : 14
+ 10-bit register                                       : 1
+ 3-bit register                                        : 1
+ 4-bit register                                        : 3
+ 5-bit register                                        : 1
+ 6-bit register                                        : 4
+ 7-bit register                                        : 1
+ 8-bit register                                        : 1
+ 9-bit register                                        : 1
+# Latches                                              : 4
+ 1-bit latch                                           : 4
+# Comparators                                          : 12
+ 3-bit comparator greater                              : 1
+ 4-bit comparator greater                              : 4
+ 6-bit comparator equal                                : 6
+ 7-bit comparator greater                              : 1
+# Multiplexers                                         : 21
+ 1-bit 2-to-1 multiplexer                              : 10
+ 10-bit 2-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 7
+ 7-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <Blockram.ngc>.
+Loading core <Blockram> for timing and area information for instance <Bram1>.
+WARNING:Xst:2677 - Node <rx_buffer_0> of sequential type is unconnected in block <uart1>.
+
+Synthesizing (advanced) Unit <FIFOBuffer>.
+The following registers are absorbed into counter <wrPTR>: 1 register on signal <wrPTR>.
+The following registers are absorbed into counter <rePTR>: 1 register on signal <rePTR>.
+Unit <FIFOBuffer> synthesized (advanced).
+
+Synthesizing (advanced) Unit <UARTecho>.
+The following registers are absorbed into counter <clkcntr>: 1 register on signal <clkcntr>.
+Unit <UARTecho> synthesized (advanced).
+
+Synthesizing (advanced) Unit <uart>.
+The following registers are absorbed into counter <count_baud>: 1 register on signal <count_baud>.
+The following registers are absorbed into counter <rx_count>: 1 register on signal <rx_count>.
+Unit <uart> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 2
+ 6-bit adder                                           : 4
+# Counters                                             : 7
+ 4-bit up counter                                      : 1
+ 5-bit up counter                                      : 1
+ 6-bit up counter                                      : 4
+ 7-bit up counter                                      : 1
+# Registers                                            : 52
+ Flip-Flops                                            : 52
+# Comparators                                          : 12
+ 3-bit comparator greater                              : 1
+ 4-bit comparator greater                              : 4
+ 6-bit comparator equal                                : 6
+ 7-bit comparator greater                              : 1
+# Multiplexers                                         : 17
+ 1-bit 2-to-1 multiplexer                              : 9
+ 10-bit 2-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 5
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <UARTWithFIFO1/FSM_0> on signal <txlink_statereg[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 00
+ s1    | 01
+ s2    | 10
+-------------------
+
+Optimizing unit <UARTecho> ...
+
+Optimizing unit <UartWithFifo> ...
+
+Optimizing unit <FIFOBuffer> ...
+
+Optimizing unit <uart> ...
+WARNING:Xst:2677 - Node <UARTWithFIFO1/uart1/rx_error> of sequential type is unconnected in block <UARTecho>.
+WARNING:Xst:2677 - Node <UARTWithFIFO1/uart1/rx_buffer_0> of sequential type is unconnected in block <UARTecho>.
+INFO:Xst:2261 - The FF/Latch <UARTWithFIFO1/uart1/rx_busy> in Unit <UARTecho> is equivalent to the following FF/Latch, which will be removed : <UARTWithFIFO1/uart1/rx_state> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block UARTecho, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 91
+ Flip-Flops                                            : 91
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : UARTecho.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 120
+#      GND                         : 3
+#      INV                         : 9
+#      LUT2                        : 16
+#      LUT3                        : 20
+#      LUT4                        : 16
+#      LUT5                        : 19
+#      LUT6                        : 32
+#      MUXF7                       : 2
+#      VCC                         : 3
+# FlipFlops/Latches                : 95
+#      FD                          : 12
+#      FDC                         : 14
+#      FDC_1                       : 1
+#      FDCE                        : 20
+#      FDE                         : 42
+#      FDP                         : 2
+#      LD                          : 4
+# RAMS                             : 2
+#      RAMB8BWER                   : 2
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 3
+#      IBUF                        : 2
+#      OBUF                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              95  out of  11440     0%  
+ Number of Slice LUTs:                  112  out of   5720     1%  
+    Number used as Logic:               112  out of   5720     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    121
+   Number with an unused Flip Flop:      26  out of    121    21%  
+   Number with an unused LUT:             9  out of    121     7%  
+   Number of fully used LUT-FF pairs:    86  out of    121    71%  
+   Number of unique control sets:        18
+
+IO Utilization: 
+ Number of IOs:                           4
+ Number of bonded IOBs:                   4  out of    102     3%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of     32     3%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------------------------------------------------------+----------------------------------------------+-------+
+Clock Signal                                                                                                 | Clock buffer(FF name)                        | Load  |
+-------------------------------------------------------------------------------------------------------------+----------------------------------------------+-------+
+clk                                                                                                          | BUFGP                                        | 5     |
+clkcntr_4                                                                                                    | BUFG                                         | 87    |
+UARTWithFIFO1/txlink_statereg_FSM_FFd2                                                                       | NONE(UARTWithFIFO1/tx_re)                    | 1     |
+UARTWithFIFO1/uart1/rx_busy                                                                                  | NONE(UARTWithFIFO1/rxlink_statenext)         | 1     |
+UARTWithFIFO1/txlink_statereg_FSM_FFd1                                                                       | NONE(UARTWithFIFO1/tx_ena)                   | 1     |
+UARTWithFIFO1/RXbuffer/wrPTR[5]_wrPTR[5]_MUX_14_o(UARTWithFIFO1/RXbuffer/Mmux_wrPTR[5]_wrPTR[5]_MUX_14_o13:O)| NONE(*)(UARTWithFIFO1/RXbuffer/re_state_next)| 1     |
+UARTWithFIFO1/TXbuffer/wrPTR[5]_wrPTR[5]_MUX_14_o(UARTWithFIFO1/TXbuffer/Mmux_wrPTR[5]_wrPTR[5]_MUX_14_o13:O)| NONE(*)(UARTWithFIFO1/TXbuffer/re_state_next)| 1     |
+-------------------------------------------------------------------------------------------------------------+----------------------------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.190ns (Maximum Frequency: 238.663MHz)
+   Minimum input arrival time before clock: 4.902ns
+   Maximum output required time after clock: 4.118ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.375ns (frequency: 421.053MHz)
+  Total number of paths / destination ports: 15 / 5
+-------------------------------------------------------------------------
+Delay:               2.375ns (Levels of Logic = 1)
+  Source:            clkcntr_0 (FF)
+  Destination:       clkcntr_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: clkcntr_0 to clkcntr_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               5   0.525   0.840  clkcntr_0 (clkcntr_0)
+     INV:I->O              1   0.255   0.681  Mcount_clkcntr_xor<0>11_INV_0 (Result<0>)
+     FD:D                      0.074          clkcntr_0
+    ----------------------------------------
+    Total                      2.375ns (0.854ns logic, 1.521ns route)
+                                       (36.0% logic, 64.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkcntr_4'
+  Clock period: 4.190ns (frequency: 238.663MHz)
+  Total number of paths / destination ports: 650 / 191
+-------------------------------------------------------------------------
+Delay:               4.190ns (Levels of Logic = 3)
+  Source:            UARTWithFIFO1/RXbuffer/re_state_reg (FF)
+  Destination:       UARTWithFIFO1/TXbuffer/wr_state_reg (FF)
+  Source Clock:      clkcntr_4 rising
+  Destination Clock: clkcntr_4 rising
+
+  Data Path: UARTWithFIFO1/RXbuffer/re_state_reg to UARTWithFIFO1/TXbuffer/wr_state_reg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              13   0.525   1.098  UARTWithFIFO1/RXbuffer/re_state_reg (UARTWithFIFO1/RXbuffer/re_state_reg)
+     LUT2:I1->O            7   0.254   0.909  UARTWithFIFO1/TXbuffer/_n0055_inv1 (UARTWithFIFO1/TXbuffer/Mmux_wr_state_next11)
+     MUXF7:S->O            1   0.185   0.910  UARTWithFIFO1/TXbuffer/Mmux_wr_state_next13 (UARTWithFIFO1/TXbuffer/Mmux_wr_state_next12)
+     LUT4:I1->O            1   0.235   0.000  UARTWithFIFO1/TXbuffer/Mmux_wr_state_next14 (UARTWithFIFO1/TXbuffer/wr_state_next)
+     FD:D                      0.074          UARTWithFIFO1/TXbuffer/wr_state_reg
+    ----------------------------------------
+    Total                      4.190ns (1.273ns logic, 2.917ns route)
+                                       (30.4% logic, 69.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkcntr_4'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              4.902ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/uart1/rx_buffer_8 (FF)
+  Destination Clock: clkcntr_4 rising
+
+  Data Path: reset to UARTWithFIFO1/uart1/rx_buffer_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            38   1.328   2.075  reset_IBUF (UARTWithFIFO1/uart1/reset_n_inv)
+     LUT6:I0->O            8   0.254   0.943  UARTWithFIFO1/uart1/_n0210_inv1 (UARTWithFIFO1/uart1/_n0210_inv)
+     FDE:CE                    0.302          UARTWithFIFO1/uart1/rx_buffer_1
+    ----------------------------------------
+    Total                      4.902ns (1.884ns logic, 3.018ns route)
+                                       (38.4% logic, 61.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkcntr_4'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/uart1/tx (FF)
+  Destination:       utx (PAD)
+  Source Clock:      clkcntr_4 rising
+
+  Data Path: UARTWithFIFO1/uart1/tx to utx
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              1   0.525   0.681  UARTWithFIFO1/uart1/tx (UARTWithFIFO1/uart1/tx)
+     OBUF:I->O                 2.912          utx_OBUF (utx)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock UARTWithFIFO1/RXbuffer/wrPTR[5]_wrPTR[5]_MUX_14_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkcntr_4      |         |         |    2.594|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UARTWithFIFO1/TXbuffer/wrPTR[5]_wrPTR[5]_MUX_14_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkcntr_4      |         |         |    2.337|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UARTWithFIFO1/txlink_statereg_FSM_FFd1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkcntr_4      |    1.790|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UARTWithFIFO1/txlink_statereg_FSM_FFd2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkcntr_4      |    1.326|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UARTWithFIFO1/uart1/rx_busy
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkcntr_4      |         |         |    1.859|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.375|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clkcntr_4
+-------------------------------------------------+---------+---------+---------+---------+
+                                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/RXbuffer/wrPTR[5]_wrPTR[5]_MUX_14_o|         |    1.336|         |         |
+UARTWithFIFO1/TXbuffer/wrPTR[5]_wrPTR[5]_MUX_14_o|         |    1.336|         |         |
+UARTWithFIFO1/txlink_statereg_FSM_FFd1           |    3.224|         |         |         |
+UARTWithFIFO1/txlink_statereg_FSM_FFd2           |    2.842|         |         |         |
+UARTWithFIFO1/uart1/rx_busy                      |         |    1.280|         |         |
+clkcntr_4                                        |    4.190|         |         |         |
+-------------------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.18 secs
+ 
+--> 
+
+Total memory usage is 4475796 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

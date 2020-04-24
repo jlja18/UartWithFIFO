@@ -1,0 +1,5 @@
+work	"FIFOBuffer.vhd"
+work	"UARTecho.vhd"
+work	"UartWithFifo.vhd"
+work	"ipcore_dir/Blockram.vhd"
+work	"uartLogic.vhd"

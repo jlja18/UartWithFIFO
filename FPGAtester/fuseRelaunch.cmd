@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Jonas/Desktop/UartWithFIFO-master/echotester_isim_beh.exe" -prj "C:/Users/Jonas/Desktop/UartWithFIFO-master/echotester_beh.prj" "work.echotester" 

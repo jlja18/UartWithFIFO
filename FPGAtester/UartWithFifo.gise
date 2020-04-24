@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="UartWithFifo.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="FIFOBuffer.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="FIFOBuffer.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="FIFOBuffer.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="FIFOBuffer.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FIFOBuffer.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="FIFOBuffer.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="FIFOBuffer.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="FIFOBuffer.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FIFOBuffer_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="FIFOBuffer_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="FIFOBuffer_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="UARTecho.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="UARTecho.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="UARTecho.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="UARTecho.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="UARTecho.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="UARTecho.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="UARTecho.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="UARTecho.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="UARTecho_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="UARTecho_envsettings.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="UARTecho_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="UARTecho_isim_beh.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="UARTecho_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="UARTecho_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="UARTecho_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="UartWithFifo.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="UartWithFifo.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="UartWithFifo.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="UartWithFifo.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="UartWithFifo.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="UartWithFifo.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="UartWithFifo.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="UartWithFifo.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="UartWithFifo_envsettings.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="UartWithFifo_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="UartWithFifo_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="UartWithFifo_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="UartWithFifo_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="echotester_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="echotester_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="echotester_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="echotester_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test1_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test1_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1587719130" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1587719130">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587719130" xil_pn:in_ck="-8722772493754740379" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1587719130">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="FIFOBuffer.vhd"/>
+      <outfile xil_pn:name="UARTecho.vhd"/>
+      <outfile xil_pn:name="UartWithFifo.vhd"/>
+      <outfile xil_pn:name="echotester.vhd"/>
+      <outfile xil_pn:name="uartLogic.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1587717509" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3729243965873397460" xil_pn:start_ts="1587717509">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587717509" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6875255593109877334" xil_pn:start_ts="1587717509">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587717509" xil_pn:in_ck="72361457184547442" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-5691675785169469365" xil_pn:start_ts="1587717509">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ipcore_dir/Blockram.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/Blockram.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1587717510" xil_pn:in_ck="-1600862678570069041" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1587717509">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="FIFOBuffer.vhd"/>
+      <outfile xil_pn:name="UARTecho.vhd"/>
+      <outfile xil_pn:name="UartWithFifo.vhd"/>
+      <outfile xil_pn:name="echotester.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/Blockram.vhd"/>
+      <outfile xil_pn:name="uartLogic.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1587717513" xil_pn:in_ck="-1600862678570069041" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="3207222364473238072" xil_pn:start_ts="1587717510">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="echotester_beh.prj"/>
+      <outfile xil_pn:name="echotester_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1587717514" xil_pn:in_ck="-3528808962798419888" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-8813216448847142459" xil_pn:start_ts="1587717513">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="echotester_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1587717011" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1587717011">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587717011" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1054472927106110436" xil_pn:start_ts="1587717011">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587717011" xil_pn:in_ck="72361457184547442" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-5691675785169469365" xil_pn:start_ts="1587717011">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ipcore_dir/Blockram.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/Blockram.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1587717011" xil_pn:in_ck="2387928087090072353" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1587717011">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587717011" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="1869369185527540126" xil_pn:start_ts="1587717011">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587717011" xil_pn:in_ck="2387928087090072353" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745955965653" xil_pn:start_ts="1587717011">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587717011" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="8540604067201908117" xil_pn:start_ts="1587717011">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587717022" xil_pn:in_ck="3179057103028200713" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-3908726238807223324" xil_pn:start_ts="1587717011">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="FIFOBuffer.ngr"/>
+      <outfile xil_pn:name="UARTecho.lso"/>
+      <outfile xil_pn:name="UARTecho.ngc"/>
+      <outfile xil_pn:name="UARTecho.ngr"/>
+      <outfile xil_pn:name="UARTecho.prj"/>
+      <outfile xil_pn:name="UARTecho.stx"/>
+      <outfile xil_pn:name="UARTecho.syr"/>
+      <outfile xil_pn:name="UARTecho.xst"/>
+      <outfile xil_pn:name="UARTecho_beh.prj"/>
+      <outfile xil_pn:name="UARTecho_stx_beh.prj"/>
+      <outfile xil_pn:name="UARTecho_xst.xrpt"/>
+      <outfile xil_pn:name="UartWithFifo.ngr"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1587543523" xil_pn:in_ck="4834887014787387356" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="2369767250167775700" xil_pn:start_ts="1587543523">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+    </transform>
+  </transforms>
+
+</generated_project>

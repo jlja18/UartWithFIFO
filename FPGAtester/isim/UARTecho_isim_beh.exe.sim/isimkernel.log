@@ -1,0 +1,28 @@
+Command line:
+   UARTecho_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64707
+
+Fri Apr 24 10:01:34 2020
+
+
+ Elaboration Time: 0.265625 sec
+
+ Current Memory Usage: 5500.48 Meg
+
+ Total Signals          : 523
+ Total Nets             : 1897
+ Total Signal Drivers   : 183
+ Total Blocks           : 50
+ Total Primitive Blocks : 31
+ Total Processes        : 119
+ Total Traceable Variables  : 461
+ Total Scalar Nets and Variables : 3724
+
+ Total Simulation Time: 0.359375 sec
+
+ Current Memory Usage: 4714.05 Meg
+
+Fri Apr 24 10:08:01 2020
+
