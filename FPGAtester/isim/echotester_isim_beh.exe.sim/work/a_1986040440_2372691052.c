@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Jonas/Desktop/UartWithFIFO-master/echotester.vhd";
+static const char *ng0 = "E:/GitHub/UartWithFIFO/FPGAtester/echotester.vhd";
 
 
 
@@ -106,7 +106,8 @@ static void work_a_1986040440_2372691052_p_1(char *t0)
     int t9;
     char *t10;
     char *t11;
-    int t12;
+    int64 t12;
+    int t13;
 
 LAB0:    t1 = (t0 + 3040U);
     t2 = *((char **)t1);
@@ -152,9 +153,9 @@ LAB5:    goto LAB4;
 LAB7:    goto LAB5;
 
 LAB8:    xsi_set_current_line(90, ng0);
-    t2 = (t0 + 5628);
+    t2 = (t0 + 5540);
     *((int *)t2) = 0;
-    t3 = (t0 + 5632);
+    t3 = (t0 + 5544);
     *((int *)t3) = 100;
     t8 = 0;
     t9 = 100;
@@ -180,23 +181,23 @@ LAB13:    xsi_set_current_line(91, ng0);
     *((unsigned char *)t11) = (unsigned char)2;
     xsi_driver_first_trans_fast(t4);
     xsi_set_current_line(92, ng0);
-    t7 = (104 * 1000000LL);
+    t7 = (90 * 1000000LL);
     t2 = (t0 + 2848);
     xsi_process_wait(t2, t7);
 
 LAB18:    *((char **)t1) = &&LAB19;
     goto LAB1;
 
-LAB14:    t2 = (t0 + 5628);
+LAB14:    t2 = (t0 + 5540);
     t8 = *((int *)t2);
-    t3 = (t0 + 5632);
+    t3 = (t0 + 5544);
     t9 = *((int *)t3);
     if (t8 == t9)
         goto LAB15;
 
-LAB32:    t12 = (t8 + 1);
-    t8 = t12;
-    t4 = (t0 + 5628);
+LAB32:    t13 = (t8 + 1);
+    t8 = t13;
+    t4 = (t0 + 5540);
     *((int *)t4) = t8;
     goto LAB12;
 
@@ -209,9 +210,10 @@ LAB16:    xsi_set_current_line(93, ng0);
     *((unsigned char *)t6) = (unsigned char)3;
     xsi_driver_first_trans_fast(t2);
     xsi_set_current_line(94, ng0);
-    t7 = (728 * 1000000LL);
+    t7 = (7 * 1000000LL);
+    t12 = (90 * t7);
     t2 = (t0 + 2848);
-    xsi_process_wait(t2, t7);
+    xsi_process_wait(t2, t12);
 
 LAB22:    *((char **)t1) = &&LAB23;
     goto LAB1;
@@ -229,7 +231,7 @@ LAB20:    xsi_set_current_line(95, ng0);
     *((unsigned char *)t6) = (unsigned char)2;
     xsi_driver_first_trans_fast(t2);
     xsi_set_current_line(96, ng0);
-    t7 = (104 * 1000000LL);
+    t7 = (90 * 1000000LL);
     t2 = (t0 + 2848);
     xsi_process_wait(t2, t7);
 
@@ -249,7 +251,7 @@ LAB24:    xsi_set_current_line(97, ng0);
     *((unsigned char *)t6) = (unsigned char)3;
     xsi_driver_first_trans_fast(t2);
     xsi_set_current_line(98, ng0);
-    t7 = (104 * 1000000LL);
+    t7 = (90 * 1000000LL);
     t2 = (t0 + 2848);
     xsi_process_wait(t2, t7);
 

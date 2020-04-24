@@ -1,2 +1,2 @@
-vhdl work "Blockram.vhd"
+vhdl work "ipcore_dir/Blockram.vhd"
 vhdl work "FIFOBuffer.vhd"

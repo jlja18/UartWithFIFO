@@ -37,7 +37,8 @@ entity FIFOBuffer is
 				  WE : in STD_LOGIC; 
 				  RE : in STD_LOGIC; 
 				  dataReady : out STD_LOGIC;
-				  Full : out STD_LOGIC
+				  Full : out STD_LOGIC; 
+				  reset : in STD_LOGIC := '1'
 				  ); 	  
 end FIFOBuffer;
 
@@ -84,66 +85,41 @@ Bram1 : Blockram
 wrs(0) <= WE;
 res(0) <= RE;
 
---process(clk, wrs, res) 
---variable readyCount :  (6 downto 0) := "0000000"; -- Counts the unread bytes
--- is variable type to ensure sequential operation of addition and substraction 
---begin
---if rising_edge(clk) then 
---
---	if (readyCount > "0000000") then -- signals wether output i avaible
---		dataReady <= '1';  -- checks first to ensure ready is asserted next clk		    
---	end if; 
---
---
---	if (readyCount < "1000000") then -- checks to see if buffer is full
---		
---		if (wrs = "1") then -- increments the pointer on write
---			wrPTR <= wrPTR + 1; 
---			readyCount := readyCount + 1; 
---		end if; 
---		
---		if (res = "1" and readyCount > "0000000") then -- decrements pointer on read, if there is something to read
---			rePTR <= rePTR + 1;
---			readyCount := readyCount - 1; 
---		end if; 
---		
---	end if; 
---	
---	if (readyCount = "0000000") then -- checks second to ensure ready i set to zero imediatly 
---		dataReady <= '0'; 
---	end if; 
---	
---	if (readyCount = "1000000") then 
---		full <= '1'; 
---	else 
---		full <= '0'; 
---	end if;
---
---end if; 
---end process; 
 
 -- implementation with statemachines
 
-process(clk) 
+process(clk, reset) 
 begin
 	if rising_edge(clk) then
-		wr_state_reg <= wr_state_next; 
-		re_state_reg <= re_state_next;
+		if (reset = '1') then 
+			wr_state_reg <= nFull; 
+			re_state_reg <= Empty; 
+		else
+				wr_state_reg <= wr_state_next; 
+				re_state_reg <= re_state_next;
+		end if; 
 	end if; 
 end process; 
 
 
 -- next state logic / output logic (mealy) write to buffer
-process(reptr, wrptr, we, clk) 
+process(reptr, wrptr, we, clk, wr_state_reg, reset) 
 begin
+
+
 	case(wr_state_reg) is
 	when nFull =>
-		FULL <= '0'; 
-		if (rising_edge(clk)) then -- adds one if wr 
-			if(we = '1') then
-			 wrptr <= wrptr + 1; 
+		FULL <= '0';
+			if (rising_edge(clk)) then 
+				if(reset = '1') then
+					wrPTR <= (others => '0'); 
+				elsif (we = '1') then 
+				   wrptr <= wrptr + 1; 
+				else 
+					wrPTR <= wrPTR; 
+				end if; 
 			end if; 
-		end if; 
+
 		
 		if (wrptr + 1 = reptr and we = '1') then  -- if next wr_ptr is re_ptr, then 
 			wr_state_next <= isFull; 	 	
@@ -164,35 +140,39 @@ end process;
 
 -- next state logic / output logic (mealy) read to buffer
 
-process(re_state_reg, clk, re, wrptr, reptr)
+process(re_state_reg, clk, re, wrptr, reptr, reset)
 begin
+re_state_next <= empty; 
+-- the clocked output logic must be in seperate if statement to ensure prober flipflop definition apperently 
+if rising_edge(clk ) then 
+	if re_state_reg = empty and reset = '1' then 
+	rePTR <= "000000";  
+	elsif re_state_reg = nempty and re = '1' then
+	rePTR <= rePTR + 1;
+	else 
+	rePTR <= rePTR; 
+	end if; 
+end if; 
+
+	
 	case re_state_reg is
 		when empty =>
-			dataready <= '0'; 
-		if (not (wrptr = reptr)) then
-			re_state_next <= nEmpty; 
-		end if; 
+			dataReady <= '0'; 
+				if (not (wrptr = reptr)) then
+					re_state_next <= nEmpty; 
+				else 
+					re_state_next <= empty; 
+				end if; 
 		
 		when nEmpty =>
-			dataready <= '1'; 
-		if rising_edge(clk) then 
-			if (re = '1') then
-				reptr <= reptr + 1;
-			end if; 
-		end if; 
-		if (wrptr = reptr + 1 and re = '1') then 
-			re_state_next <= empty; 
-		end if; 
-		
+			dataready <= '1'; 			
+			if (wrptr = reptr + 1 and re = '1') then 
+				re_state_next <= empty; 
+			else 
+				re_state_next <= nEmpty; 
+			end if; 	
 	end case; 
 end process; 
-
-
-
-
-
-
-
 
 
 end Behavioral;

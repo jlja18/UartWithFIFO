@@ -1,0 +1,14 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Apr 24 15:27:05 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+PROHIBIT = SITE "P144";
+PROHIBIT = SITE "P69";
+PROHIBIT = SITE "P60";
+COMP "urx" LOCATE = SITE "P114" LEVEL 1;
+COMP "utx" LOCATE = SITE "P93" LEVEL 1;
+COMP "clk" LOCATE = SITE "P94" LEVEL 1;
+NET "clk_BUFGP/IBUFG" PERIOD = 31.25 ns HIGH 50%;
+SCHEMATIC END;
+

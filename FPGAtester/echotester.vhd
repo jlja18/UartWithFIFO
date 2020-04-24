@@ -89,13 +89,13 @@ BEGIN
 	wait for 100 us; 
 	for I in 0 to 100 loop  
 	urx <= '0'; 
-	wait for 104 us; 
+	wait for 90 us; 
 	urx <= '1'; 
-	wait for 728 us;
+	wait for 90*7 us;
 	urx <= '0'; 
-	wait for 104 us; 
+	wait for 90 us; 
 	urx <= '1'; 
-	wait for 104 us; 
+	wait for 90 us; 
 	end loop; 
 	
       -- hold reset state for 100 ns.

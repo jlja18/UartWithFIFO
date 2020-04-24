@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: UARTecho.prj
 
@@ -108,20 +108,19 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\Jonas\Desktop\UartWithFIFO-master\ipcore_dir\Blockram.vhd" into library work
+Parsing VHDL file "E:\GitHub\UartWithFIFO\FPGAtester\ipcore_dir\Blockram.vhd" into library work
 Parsing entity <Blockram>.
 Parsing architecture <Blockram_a> of entity <blockram>.
-Parsing VHDL file "C:\Users\Jonas\Desktop\UartWithFIFO-master\uartLogic.vhd" into library work
+Parsing VHDL file "E:\GitHub\UartWithFIFO\FPGAtester\uartLogic.vhd" into library work
 Parsing entity <uart>.
 Parsing architecture <logic> of entity <uart>.
-Parsing VHDL file "C:\Users\Jonas\Desktop\UartWithFIFO-master\FIFOBuffer.vhd" into library work
+Parsing VHDL file "E:\GitHub\UartWithFIFO\FPGAtester\FIFOBuffer.vhd" into library work
 Parsing entity <FIFOBuffer>.
 Parsing architecture <Behavioral> of entity <fifobuffer>.
-Parsing VHDL file "C:\Users\Jonas\Desktop\UartWithFIFO-master\UartWithFifo.vhd" into library work
+Parsing VHDL file "E:\GitHub\UartWithFIFO\FPGAtester\UartWithFifo.vhd" into library work
 Parsing entity <UartWithFifo>.
 Parsing architecture <Behavioral> of entity <uartwithfifo>.
-WARNING:HDLCompiler:946 - "C:\Users\Jonas\Desktop\UartWithFIFO-master\UartWithFifo.vhd" Line 125: Actual for formal port reset_n is neither a static name nor a globally static expression
-Parsing VHDL file "C:\Users\Jonas\Desktop\UartWithFIFO-master\UARTecho.vhd" into library work
+Parsing VHDL file "E:\GitHub\UartWithFIFO\FPGAtester\UARTecho.vhd" into library work
 Parsing entity <UARTecho>.
 Parsing architecture <Behavioral> of entity <uartecho>.
 
@@ -130,37 +129,35 @@ Parsing architecture <Behavioral> of entity <uartecho>.
 =========================================================================
 
 Elaborating entity <UARTecho> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:871 - "C:\Users\Jonas\Desktop\UartWithFIFO-master\UARTecho.vhd" Line 61: Using initial value '0' for msb_lsb since it is never assigned
+WARNING:HDLCompiler:871 - "E:\GitHub\UartWithFIFO\FPGAtester\UARTecho.vhd" Line 62: Using initial value '1' for msb_lsb since it is never assigned
 
 Elaborating entity <UartWithFifo> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <FIFOBuffer> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <Blockram> (architecture <Blockram_a>) from library <work>.
-WARNING:HDLCompiler:92 - "C:\Users\Jonas\Desktop\UartWithFIFO-master\FIFOBuffer.vhd" Line 139: wr_state_reg should be on the sensitivity list of the process
 
 Elaborating entity <uart> (architecture <logic>) with generics from library <work>.
-WARNING:HDLCompiler:92 - "C:\Users\Jonas\Desktop\UartWithFIFO-master\uartLogic.vhd" Line 104: os_pulse should be on the sensitivity list of the process
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <UARTecho>.
-    Related source file is "C:\Users\Jonas\Desktop\UartWithFIFO-master\UARTecho.vhd".
-INFO:Xst:3210 - "C:\Users\Jonas\Desktop\UartWithFIFO-master\UARTecho.vhd" line 83: Output port <full> of the instance <UARTWithFIFO1> is unconnected or connected to loadless signal.
+    Related source file is "E:\GitHub\UartWithFIFO\FPGAtester\UARTecho.vhd".
+INFO:Xst:3210 - "E:\GitHub\UartWithFIFO\FPGAtester\UARTecho.vhd" line 84: Output port <full> of the instance <UARTWithFIFO1> is unconnected or connected to loadless signal.
     Found 5-bit register for signal <clkcntr>.
-    Found 5-bit adder for signal <clkcntr[4]_GND_5_o_add_0_OUT> created at line 68.
+    Found 5-bit adder for signal <clkcntr[4]_GND_5_o_add_0_OUT> created at line 69.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   5 D-type flip-flop(s).
 Unit <UARTecho> synthesized.
 
 Synthesizing Unit <UartWithFifo>.
-    Related source file is "C:\Users\Jonas\Desktop\UartWithFIFO-master\UartWithFifo.vhd".
-INFO:Xst:3210 - "C:\Users\Jonas\Desktop\UartWithFIFO-master\UartWithFifo.vhd" line 111: Output port <Full> of the instance <RXbuffer> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jonas\Desktop\UartWithFIFO-master\UartWithFifo.vhd" line 122: Output port <rx_error> of the instance <uart1> is unconnected or connected to loadless signal.
-    Found 1-bit register for signal <rxlink_statenext>.
+    Related source file is "E:\GitHub\UartWithFIFO\FPGAtester\UartWithFifo.vhd".
+INFO:Xst:3210 - "E:\GitHub\UartWithFIFO\FPGAtester\UartWithFifo.vhd" line 114: Output port <Full> of the instance <RXbuffer> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\GitHub\UartWithFIFO\FPGAtester\UartWithFifo.vhd" line 126: Output port <rx_busy> of the instance <uart1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\GitHub\UartWithFIFO\FPGAtester\UartWithFifo.vhd" line 126: Output port <rx_error> of the instance <uart1> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <rx_we>.
     Found 2-bit register for signal <txlink_statereg>.
     Found finite state machine <FSM_0> for signal <txlink_statereg>.
@@ -168,43 +165,50 @@ INFO:Xst:3210 - "C:\Users\Jonas\Desktop\UartWithFIFO-master\UartWithFifo.vhd" li
     | States             | 3                                              |
     | Transitions        | 5                                              |
     | Inputs             | 2                                              |
-    | Outputs            | 4                                              |
+    | Outputs            | 2                                              |
     | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | s0                                             |
     | Power Up State     | s0                                             |
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-WARNING:Xst:737 - Found 1-bit latch for signal <tx_re>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tx_ena>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
-	inferred   2 D-type flip-flop(s).
-	inferred   2 Latch(s).
-	inferred   1 Multiplexer(s).
+	inferred   1 D-type flip-flop(s).
 	inferred   1 Finite State Machine(s).
 Unit <UartWithFifo> synthesized.
 
 Synthesizing Unit <FIFOBuffer>.
-    Related source file is "C:\Users\Jonas\Desktop\UartWithFIFO-master\FIFOBuffer.vhd".
+    Related source file is "E:\GitHub\UartWithFIFO\FPGAtester\FIFOBuffer.vhd".
     Found 1-bit register for signal <dataReady>.
     Found 1-bit register for signal <Full>.
-    Found 6-bit register for signal <wrPTR>.
-    Found 6-bit register for signal <rePTR>.
-    Found 6-bit adder for signal <wrPTR[5]_GND_7_o_add_3_OUT> created at line 148.
-    Found 6-bit adder for signal <rePTR[5]_GND_7_o_add_12_OUT> created at line 183.
-WARNING:Xst:737 - Found 1-bit latch for signal <re_state_next>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 6-bit comparator equal for signal <wrPTR[5]_rePTR[5]_equal_5_o> created at line 148
-    Found 6-bit comparator equal for signal <wrPTR[5]_rePTR[5]_equal_9_o> created at line 172
-    Found 6-bit comparator equal for signal <wrPTR[5]_rePTR[5]_equal_14_o> created at line 183
+    Found 1-bit register for signal <wrPTR<5>>.
+    Found 1-bit register for signal <wrPTR<4>>.
+    Found 1-bit register for signal <wrPTR<3>>.
+    Found 1-bit register for signal <wrPTR<2>>.
+    Found 1-bit register for signal <wrPTR<1>>.
+    Found 1-bit register for signal <wrPTR<0>>.
+    Found 1-bit register for signal <rePTR<5>>.
+    Found 1-bit register for signal <rePTR<4>>.
+    Found 1-bit register for signal <rePTR<3>>.
+    Found 1-bit register for signal <rePTR<2>>.
+    Found 1-bit register for signal <rePTR<1>>.
+    Found 1-bit register for signal <rePTR<0>>.
+    Found 6-bit adder for signal <wrPTR[5]_GND_7_o_add_3_OUT> created at line 121.
+    Found 6-bit adder for signal <rePTR[5]_GND_7_o_add_13_OUT> created at line 166.
+    Found 6-bit comparator equal for signal <wrPTR[5]_rePTR[5]_equal_5_o> created at line 121
+    Found 6-bit comparator equal for signal <wrPTR[5]_rePTR[5]_equal_9_o> created at line 150
+    Found 6-bit comparator equal for signal <wrPTR[5]_rePTR[5]_equal_15_o> created at line 166
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  14 D-type flip-flop(s).
-	inferred   1 Latch(s).
 	inferred   3 Comparator(s).
-	inferred   2 Multiplexer(s).
+	inferred  12 Multiplexer(s).
 Unit <FIFOBuffer> synthesized.
 
 Synthesizing Unit <uart>.
-    Related source file is "C:\Users\Jonas\Desktop\UartWithFIFO-master\uartLogic.vhd".
+    Related source file is "E:\GitHub\UartWithFIFO\FPGAtester\uartLogic.vhd".
         clk_freq = 1000000
         baud_rate = 9600
         os_rate = 16
@@ -227,13 +231,13 @@ Synthesizing Unit <uart>.
     Found 1-bit register for signal <baud_pulse>.
     Found 9-bit register for signal <rx_buffer>.
     Found 10-bit register for signal <tx_buffer>.
-    Found 7-bit adder for signal <count_baud[6]_GND_12_o_add_1_OUT> created at line 74.
-    Found 3-bit adder for signal <GND_12_o_GND_12_o_add_5_OUT> created at line 83.
-    Found 4-bit adder for signal <os_count[3]_GND_12_o_add_16_OUT> created at line 124.
-    Found 4-bit adder for signal <rx_count[3]_GND_12_o_add_18_OUT> created at line 128.
-    Found 4-bit adder for signal <tx_count[3]_GND_12_o_add_44_OUT> created at line 176.
+    Found 7-bit adder for signal <count_baud[6]_GND_10_o_add_1_OUT> created at line 74.
+    Found 3-bit adder for signal <GND_10_o_GND_10_o_add_5_OUT> created at line 83.
+    Found 4-bit adder for signal <os_count[3]_GND_10_o_add_16_OUT> created at line 124.
+    Found 4-bit adder for signal <rx_count[3]_GND_10_o_add_18_OUT> created at line 128.
+    Found 4-bit adder for signal <tx_count[3]_GND_10_o_add_44_OUT> created at line 176.
     Found 7-bit comparator greater for signal <count_baud[6]_PWR_9_o_LessThan_1_o> created at line 73
-    Found 3-bit comparator greater for signal <GND_12_o_PWR_9_o_LessThan_5_o> created at line 82
+    Found 3-bit comparator greater for signal <GND_10_o_PWR_9_o_LessThan_5_o> created at line 82
     Found 4-bit comparator greater for signal <os_count[3]_PWR_9_o_LessThan_10_o> created at line 109
     Found 4-bit comparator greater for signal <os_count[3]_PWR_9_o_LessThan_16_o> created at line 123
     Found 4-bit comparator greater for signal <rx_count[3]_PWR_9_o_LessThan_18_o> created at line 126
@@ -255,28 +259,26 @@ Macro Statistics
  5-bit adder                                           : 1
  6-bit adder                                           : 4
  7-bit adder                                           : 1
-# Registers                                            : 27
- 1-bit register                                        : 14
+# Registers                                            : 46
+ 1-bit register                                        : 37
  10-bit register                                       : 1
  3-bit register                                        : 1
  4-bit register                                        : 3
  5-bit register                                        : 1
- 6-bit register                                        : 4
  7-bit register                                        : 1
  8-bit register                                        : 1
  9-bit register                                        : 1
-# Latches                                              : 4
- 1-bit latch                                           : 4
 # Comparators                                          : 12
  3-bit comparator greater                              : 1
  4-bit comparator greater                              : 4
  6-bit comparator equal                                : 6
  7-bit comparator greater                              : 1
-# Multiplexers                                         : 21
- 1-bit 2-to-1 multiplexer                              : 10
+# Multiplexers                                         : 40
+ 1-bit 2-to-1 multiplexer                              : 23
  10-bit 2-to-1 multiplexer                             : 1
  3-bit 2-to-1 multiplexer                              : 2
  4-bit 2-to-1 multiplexer                              : 7
+ 6-bit 2-to-1 multiplexer                              : 6
  7-bit 2-to-1 multiplexer                              : 1
 # FSMs                                                 : 1
 
@@ -289,11 +291,6 @@ Macro Statistics
 Reading core <Blockram.ngc>.
 Loading core <Blockram> for timing and area information for instance <Bram1>.
 WARNING:Xst:2677 - Node <rx_buffer_0> of sequential type is unconnected in block <uart1>.
-
-Synthesizing (advanced) Unit <FIFOBuffer>.
-The following registers are absorbed into counter <wrPTR>: 1 register on signal <wrPTR>.
-The following registers are absorbed into counter <rePTR>: 1 register on signal <rePTR>.
-Unit <FIFOBuffer> synthesized (advanced).
 
 Synthesizing (advanced) Unit <UARTecho>.
 The following registers are absorbed into counter <clkcntr>: 1 register on signal <clkcntr>.
@@ -312,23 +309,23 @@ Macro Statistics
  3-bit adder                                           : 1
  4-bit adder                                           : 2
  6-bit adder                                           : 4
-# Counters                                             : 7
+# Counters                                             : 3
  4-bit up counter                                      : 1
  5-bit up counter                                      : 1
- 6-bit up counter                                      : 4
  7-bit up counter                                      : 1
-# Registers                                            : 52
- Flip-Flops                                            : 52
+# Registers                                            : 75
+ Flip-Flops                                            : 75
 # Comparators                                          : 12
  3-bit comparator greater                              : 1
  4-bit comparator greater                              : 4
  6-bit comparator equal                                : 6
  7-bit comparator greater                              : 1
-# Multiplexers                                         : 17
- 1-bit 2-to-1 multiplexer                              : 9
+# Multiplexers                                         : 41
+ 1-bit 2-to-1 multiplexer                              : 27
  10-bit 2-to-1 multiplexer                             : 1
  3-bit 2-to-1 multiplexer                              : 2
  4-bit 2-to-1 multiplexer                              : 5
+ 6-bit 2-to-1 multiplexer                              : 6
 # FSMs                                                 : 1
 
 =========================================================================
@@ -345,6 +342,42 @@ Optimizing FSM <UARTWithFIFO1/FSM_0> on signal <txlink_statereg[1:2]> with user 
  s1    | 01
  s2    | 10
 -------------------
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    rePTR_5 in unit <FIFOBuffer>
+    wrPTR_5 in unit <FIFOBuffer>
+    rePTR_0 in unit <FIFOBuffer>
+    rePTR_1 in unit <FIFOBuffer>
+    rePTR_2 in unit <FIFOBuffer>
+    rePTR_3 in unit <FIFOBuffer>
+    rePTR_4 in unit <FIFOBuffer>
+    wrPTR_0 in unit <FIFOBuffer>
+    wrPTR_1 in unit <FIFOBuffer>
+    wrPTR_2 in unit <FIFOBuffer>
+    wrPTR_3 in unit <FIFOBuffer>
+    wrPTR_4 in unit <FIFOBuffer>
+
 
 Optimizing unit <UARTecho> ...
 
@@ -353,13 +386,13 @@ Optimizing unit <UartWithFifo> ...
 Optimizing unit <FIFOBuffer> ...
 
 Optimizing unit <uart> ...
+WARNING:Xst:2677 - Node <UARTWithFIFO1/uart1/rx_busy> of sequential type is unconnected in block <UARTecho>.
 WARNING:Xst:2677 - Node <UARTWithFIFO1/uart1/rx_error> of sequential type is unconnected in block <UARTecho>.
 WARNING:Xst:2677 - Node <UARTWithFIFO1/uart1/rx_buffer_0> of sequential type is unconnected in block <UARTecho>.
-INFO:Xst:2261 - The FF/Latch <UARTWithFIFO1/uart1/rx_busy> in Unit <UARTecho> is equivalent to the following FF/Latch, which will be removed : <UARTWithFIFO1/uart1/rx_state> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block UARTecho, actual ratio is 2.
+Found area constraint ratio of 100 (+ 5) on block UARTecho, actual ratio is 3.
 
 Final Macro Processing ...
 
@@ -367,8 +400,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 91
- Flip-Flops                                            : 91
+# Registers                                            : 114
+ Flip-Flops                                            : 114
 
 =========================================================================
 
@@ -391,24 +424,24 @@ Top Level Output File Name         : UARTecho.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 120
+# BELS                             : 212
 #      GND                         : 3
-#      INV                         : 9
-#      LUT2                        : 16
-#      LUT3                        : 20
-#      LUT4                        : 16
-#      LUT5                        : 19
-#      LUT6                        : 32
-#      MUXF7                       : 2
+#      INV                         : 2
+#      LUT2                        : 7
+#      LUT3                        : 37
+#      LUT4                        : 28
+#      LUT5                        : 75
+#      LUT6                        : 56
+#      MUXF7                       : 1
 #      VCC                         : 3
-# FlipFlops/Latches                : 95
-#      FD                          : 12
-#      FDC                         : 14
-#      FDC_1                       : 1
+# FlipFlops/Latches                : 138
+#      FD                          : 5
+#      FDC                         : 38
 #      FDCE                        : 20
-#      FDE                         : 42
-#      FDP                         : 2
-#      LD                          : 4
+#      FDE                         : 18
+#      FDP                         : 26
+#      FDR                         : 7
+#      LDC                         : 24
 # RAMS                             : 2
 #      RAMB8BWER                   : 2
 # Clock Buffers                    : 2
@@ -425,16 +458,16 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              95  out of  11440     0%  
- Number of Slice LUTs:                  112  out of   5720     1%  
-    Number used as Logic:               112  out of   5720     1%  
+ Number of Slice Registers:             138  out of  11440     1%  
+ Number of Slice LUTs:                  205  out of   5720     3%  
+    Number used as Logic:               205  out of   5720     3%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    121
-   Number with an unused Flip Flop:      26  out of    121    21%  
-   Number with an unused LUT:             9  out of    121     7%  
-   Number of fully used LUT-FF pairs:    86  out of    121    71%  
-   Number of unique control sets:        18
+ Number of LUT Flip Flop pairs used:    247
+   Number with an unused Flip Flop:     109  out of    247    44%  
+   Number with an unused LUT:            42  out of    247    17%  
+   Number of fully used LUT-FF pairs:    96  out of    247    38%  
+   Number of unique control sets:        81
 
 IO Utilization: 
  Number of IOs:                           4
@@ -463,18 +496,37 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
--------------------------------------------------------------------------------------------------------------+----------------------------------------------+-------+
-Clock Signal                                                                                                 | Clock buffer(FF name)                        | Load  |
--------------------------------------------------------------------------------------------------------------+----------------------------------------------+-------+
-clk                                                                                                          | BUFGP                                        | 5     |
-clkcntr_4                                                                                                    | BUFG                                         | 87    |
-UARTWithFIFO1/txlink_statereg_FSM_FFd2                                                                       | NONE(UARTWithFIFO1/tx_re)                    | 1     |
-UARTWithFIFO1/uart1/rx_busy                                                                                  | NONE(UARTWithFIFO1/rxlink_statenext)         | 1     |
-UARTWithFIFO1/txlink_statereg_FSM_FFd1                                                                       | NONE(UARTWithFIFO1/tx_ena)                   | 1     |
-UARTWithFIFO1/RXbuffer/wrPTR[5]_wrPTR[5]_MUX_14_o(UARTWithFIFO1/RXbuffer/Mmux_wrPTR[5]_wrPTR[5]_MUX_14_o13:O)| NONE(*)(UARTWithFIFO1/RXbuffer/re_state_next)| 1     |
-UARTWithFIFO1/TXbuffer/wrPTR[5]_wrPTR[5]_MUX_14_o(UARTWithFIFO1/TXbuffer/Mmux_wrPTR[5]_wrPTR[5]_MUX_14_o13:O)| NONE(*)(UARTWithFIFO1/TXbuffer/re_state_next)| 1     |
--------------------------------------------------------------------------------------------------------------+----------------------------------------------+-------+
-(*) These 2 clock signal(s) are generated by combinatorial logic,
+-----------------------------------------------------------------------------------------------------+--------------------------------------------+-------+
+Clock Signal                                                                                         | Clock buffer(FF name)                      | Load  |
+-----------------------------------------------------------------------------------------------------+--------------------------------------------+-------+
+clk                                                                                                  | BUFGP                                      | 5     |
+clkcntr_4                                                                                            | BUFG                                       | 111   |
+UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_19_o(UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_19_o1:O)| NONE(*)(UARTWithFIFO1/RXbuffer/rePTR_5_LDC)| 1     |
+UARTWithFIFO1/RXbuffer/reset_wrPTR[5]_AND_7_o(UARTWithFIFO1/RXbuffer/reset_wrPTR[5]_AND_7_o1:O)      | NONE(*)(UARTWithFIFO1/RXbuffer/wrPTR_5_LDC)| 1     |
+UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_29_o(UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_29_o1:O)| NONE(*)(UARTWithFIFO1/RXbuffer/rePTR_0_LDC)| 1     |
+UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_27_o(UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_27_o1:O)| NONE(*)(UARTWithFIFO1/RXbuffer/rePTR_1_LDC)| 1     |
+UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_25_o(UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_25_o1:O)| NONE(*)(UARTWithFIFO1/RXbuffer/rePTR_2_LDC)| 1     |
+UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_23_o(UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_23_o1:O)| NONE(*)(UARTWithFIFO1/RXbuffer/rePTR_3_LDC)| 1     |
+UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_21_o(UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_21_o1:O)| NONE(*)(UARTWithFIFO1/RXbuffer/rePTR_4_LDC)| 1     |
+UARTWithFIFO1/RXbuffer/reset_wrPTR[0]_AND_17_o(UARTWithFIFO1/RXbuffer/reset_wrPTR[0]_AND_17_o1:O)    | NONE(*)(UARTWithFIFO1/RXbuffer/wrPTR_0_LDC)| 1     |
+UARTWithFIFO1/RXbuffer/reset_wrPTR[1]_AND_15_o(UARTWithFIFO1/RXbuffer/reset_wrPTR[1]_AND_15_o1:O)    | NONE(*)(UARTWithFIFO1/RXbuffer/wrPTR_1_LDC)| 1     |
+UARTWithFIFO1/RXbuffer/reset_wrPTR[2]_AND_13_o(UARTWithFIFO1/RXbuffer/reset_wrPTR[2]_AND_13_o1:O)    | NONE(*)(UARTWithFIFO1/RXbuffer/wrPTR_2_LDC)| 1     |
+UARTWithFIFO1/RXbuffer/reset_wrPTR[3]_AND_11_o(UARTWithFIFO1/RXbuffer/reset_wrPTR[3]_AND_11_o1:O)    | NONE(*)(UARTWithFIFO1/RXbuffer/wrPTR_3_LDC)| 1     |
+UARTWithFIFO1/RXbuffer/reset_wrPTR[4]_AND_9_o(UARTWithFIFO1/RXbuffer/reset_wrPTR[4]_AND_9_o1:O)      | NONE(*)(UARTWithFIFO1/RXbuffer/wrPTR_4_LDC)| 1     |
+UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_19_o(UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_19_o1:O)| NONE(*)(UARTWithFIFO1/TXbuffer/rePTR_5_LDC)| 1     |
+UARTWithFIFO1/TXbuffer/reset_wrPTR[5]_AND_7_o(UARTWithFIFO1/TXbuffer/reset_wrPTR[5]_AND_7_o1:O)      | NONE(*)(UARTWithFIFO1/TXbuffer/wrPTR_5_LDC)| 1     |
+UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_29_o(UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_29_o1:O)| NONE(*)(UARTWithFIFO1/TXbuffer/rePTR_0_LDC)| 1     |
+UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_27_o(UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_27_o1:O)| NONE(*)(UARTWithFIFO1/TXbuffer/rePTR_1_LDC)| 1     |
+UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_25_o(UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_25_o1:O)| NONE(*)(UARTWithFIFO1/TXbuffer/rePTR_2_LDC)| 1     |
+UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_23_o(UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_23_o1:O)| NONE(*)(UARTWithFIFO1/TXbuffer/rePTR_3_LDC)| 1     |
+UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_21_o(UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_21_o1:O)| NONE(*)(UARTWithFIFO1/TXbuffer/rePTR_4_LDC)| 1     |
+UARTWithFIFO1/TXbuffer/reset_wrPTR[0]_AND_17_o(UARTWithFIFO1/TXbuffer/reset_wrPTR[0]_AND_17_o1:O)    | NONE(*)(UARTWithFIFO1/TXbuffer/wrPTR_0_LDC)| 1     |
+UARTWithFIFO1/TXbuffer/reset_wrPTR[1]_AND_15_o(UARTWithFIFO1/TXbuffer/reset_wrPTR[1]_AND_15_o1:O)    | NONE(*)(UARTWithFIFO1/TXbuffer/wrPTR_1_LDC)| 1     |
+UARTWithFIFO1/TXbuffer/reset_wrPTR[2]_AND_13_o(UARTWithFIFO1/TXbuffer/reset_wrPTR[2]_AND_13_o1:O)    | NONE(*)(UARTWithFIFO1/TXbuffer/wrPTR_2_LDC)| 1     |
+UARTWithFIFO1/TXbuffer/reset_wrPTR[3]_AND_11_o(UARTWithFIFO1/TXbuffer/reset_wrPTR[3]_AND_11_o1:O)    | NONE(*)(UARTWithFIFO1/TXbuffer/wrPTR_3_LDC)| 1     |
+UARTWithFIFO1/TXbuffer/reset_wrPTR[4]_AND_9_o(UARTWithFIFO1/TXbuffer/reset_wrPTR[4]_AND_9_o1:O)      | NONE(*)(UARTWithFIFO1/TXbuffer/wrPTR_4_LDC)| 1     |
+-----------------------------------------------------------------------------------------------------+--------------------------------------------+-------+
+(*) These 24 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -487,8 +539,8 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 4.190ns (Maximum Frequency: 238.663MHz)
-   Minimum input arrival time before clock: 4.902ns
+   Minimum period: 5.590ns (Maximum Frequency: 178.891MHz)
+   Minimum input arrival time before clock: 5.552ns
    Maximum output required time after clock: 4.118ns
    Maximum combinational path delay: No path found
 
@@ -520,47 +572,1057 @@ Delay:               2.375ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clkcntr_4'
-  Clock period: 4.190ns (frequency: 238.663MHz)
-  Total number of paths / destination ports: 650 / 191
+  Clock period: 5.590ns (frequency: 178.891MHz)
+  Total number of paths / destination ports: 1439 / 242
 -------------------------------------------------------------------------
-Delay:               4.190ns (Levels of Logic = 3)
-  Source:            UARTWithFIFO1/RXbuffer/re_state_reg (FF)
-  Destination:       UARTWithFIFO1/TXbuffer/wr_state_reg (FF)
+Delay:               5.590ns (Levels of Logic = 4)
+  Source:            UARTWithFIFO1/TXbuffer/wrPTR_1_P_1 (FF)
+  Destination:       UARTWithFIFO1/TXbuffer/re_state_reg (FF)
   Source Clock:      clkcntr_4 rising
   Destination Clock: clkcntr_4 rising
 
-  Data Path: UARTWithFIFO1/RXbuffer/re_state_reg to UARTWithFIFO1/TXbuffer/wr_state_reg
+  Data Path: UARTWithFIFO1/TXbuffer/wrPTR_1_P_1 to UARTWithFIFO1/TXbuffer/re_state_reg
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              13   0.525   1.098  UARTWithFIFO1/RXbuffer/re_state_reg (UARTWithFIFO1/RXbuffer/re_state_reg)
-     LUT2:I1->O            7   0.254   0.909  UARTWithFIFO1/TXbuffer/_n0055_inv1 (UARTWithFIFO1/TXbuffer/Mmux_wr_state_next11)
-     MUXF7:S->O            1   0.185   0.910  UARTWithFIFO1/TXbuffer/Mmux_wr_state_next13 (UARTWithFIFO1/TXbuffer/Mmux_wr_state_next12)
-     LUT4:I1->O            1   0.235   0.000  UARTWithFIFO1/TXbuffer/Mmux_wr_state_next14 (UARTWithFIFO1/TXbuffer/wr_state_next)
-     FD:D                      0.074          UARTWithFIFO1/TXbuffer/wr_state_reg
+     FDP:C->Q              4   0.525   0.912  UARTWithFIFO1/TXbuffer/wrPTR_1_P_1 (UARTWithFIFO1/TXbuffer/wrPTR_1_P_1)
+     LUT3:I1->O           11   0.250   1.494  UARTWithFIFO1/TXbuffer/wrPTR_11 (UARTWithFIFO1/TXbuffer/wrPTR_1)
+     LUT6:I0->O            1   0.254   0.682  UARTWithFIFO1/TXbuffer/wrPTR[5]_rePTR[5]_equal_9_o61_SW0 (N17)
+     LUT5:I4->O            1   0.254   0.910  UARTWithFIFO1/TXbuffer/wrPTR[5]_rePTR[5]_equal_9_o61 (UARTWithFIFO1/TXbuffer/wrPTR[5]_rePTR[5]_equal_9_o)
+     LUT6:I3->O            1   0.235   0.000  UARTWithFIFO1/TXbuffer/Mmux_re_state_next18 (UARTWithFIFO1/TXbuffer/re_state_next)
+     FDR:D                     0.074          UARTWithFIFO1/TXbuffer/re_state_reg
     ----------------------------------------
-    Total                      4.190ns (1.273ns logic, 2.917ns route)
-                                       (30.4% logic, 69.6% route)
+    Total                      5.590ns (1.592ns logic, 3.998ns route)
+                                       (28.5% logic, 71.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_19_o'
+  Clock period: 3.099ns (frequency: 322.685MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.099ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/RXbuffer/rePTR_5_LDC (LATCH)
+  Destination:       UARTWithFIFO1/RXbuffer/rePTR_5_LDC (LATCH)
+  Source Clock:      UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_19_o falling
+  Destination Clock: UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_19_o falling
+
+  Data Path: UARTWithFIFO1/RXbuffer/rePTR_5_LDC to UARTWithFIFO1/RXbuffer/rePTR_5_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.581   1.080  UARTWithFIFO1/RXbuffer/rePTR_5_LDC (UARTWithFIFO1/RXbuffer/rePTR_5_LDC)
+     LUT5:I1->O            2   0.254   0.725  UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_20_o1 (UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_20_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/RXbuffer/rePTR_5_LDC
+    ----------------------------------------
+    Total                      3.099ns (1.294ns logic, 1.805ns route)
+                                       (41.8% logic, 58.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UARTWithFIFO1/RXbuffer/reset_wrPTR[5]_AND_7_o'
+  Clock period: 3.099ns (frequency: 322.685MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.099ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/RXbuffer/wrPTR_5_LDC (LATCH)
+  Destination:       UARTWithFIFO1/RXbuffer/wrPTR_5_LDC (LATCH)
+  Source Clock:      UARTWithFIFO1/RXbuffer/reset_wrPTR[5]_AND_7_o falling
+  Destination Clock: UARTWithFIFO1/RXbuffer/reset_wrPTR[5]_AND_7_o falling
+
+  Data Path: UARTWithFIFO1/RXbuffer/wrPTR_5_LDC to UARTWithFIFO1/RXbuffer/wrPTR_5_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.581   1.080  UARTWithFIFO1/RXbuffer/wrPTR_5_LDC (UARTWithFIFO1/RXbuffer/wrPTR_5_LDC)
+     LUT5:I1->O            2   0.254   0.725  UARTWithFIFO1/RXbuffer/reset_wrPTR[5]_AND_8_o1 (UARTWithFIFO1/RXbuffer/reset_wrPTR[5]_AND_8_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/RXbuffer/wrPTR_5_LDC
+    ----------------------------------------
+    Total                      3.099ns (1.294ns logic, 1.805ns route)
+                                       (41.8% logic, 58.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_29_o'
+  Clock period: 3.171ns (frequency: 315.358MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.171ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/RXbuffer/rePTR_0_LDC (LATCH)
+  Destination:       UARTWithFIFO1/RXbuffer/rePTR_0_LDC (LATCH)
+  Source Clock:      UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_29_o falling
+  Destination Clock: UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_29_o falling
+
+  Data Path: UARTWithFIFO1/RXbuffer/rePTR_0_LDC to UARTWithFIFO1/RXbuffer/rePTR_0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              6   0.581   1.152  UARTWithFIFO1/RXbuffer/rePTR_0_LDC (UARTWithFIFO1/RXbuffer/rePTR_0_LDC)
+     LUT5:I1->O            2   0.254   0.725  UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_30_o1 (UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_30_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/RXbuffer/rePTR_0_LDC
+    ----------------------------------------
+    Total                      3.171ns (1.294ns logic, 1.877ns route)
+                                       (40.8% logic, 59.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_27_o'
+  Clock period: 3.099ns (frequency: 322.685MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.099ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/RXbuffer/rePTR_1_LDC (LATCH)
+  Destination:       UARTWithFIFO1/RXbuffer/rePTR_1_LDC (LATCH)
+  Source Clock:      UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_27_o falling
+  Destination Clock: UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_27_o falling
+
+  Data Path: UARTWithFIFO1/RXbuffer/rePTR_1_LDC to UARTWithFIFO1/RXbuffer/rePTR_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.581   1.080  UARTWithFIFO1/RXbuffer/rePTR_1_LDC (UARTWithFIFO1/RXbuffer/rePTR_1_LDC)
+     LUT5:I1->O            2   0.254   0.725  UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_28_o1 (UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_28_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/RXbuffer/rePTR_1_LDC
+    ----------------------------------------
+    Total                      3.099ns (1.294ns logic, 1.805ns route)
+                                       (41.8% logic, 58.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_25_o'
+  Clock period: 3.099ns (frequency: 322.685MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.099ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/RXbuffer/rePTR_2_LDC (LATCH)
+  Destination:       UARTWithFIFO1/RXbuffer/rePTR_2_LDC (LATCH)
+  Source Clock:      UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_25_o falling
+  Destination Clock: UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_25_o falling
+
+  Data Path: UARTWithFIFO1/RXbuffer/rePTR_2_LDC to UARTWithFIFO1/RXbuffer/rePTR_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.581   1.080  UARTWithFIFO1/RXbuffer/rePTR_2_LDC (UARTWithFIFO1/RXbuffer/rePTR_2_LDC)
+     LUT5:I1->O            2   0.254   0.725  UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_26_o1 (UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_26_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/RXbuffer/rePTR_2_LDC
+    ----------------------------------------
+    Total                      3.099ns (1.294ns logic, 1.805ns route)
+                                       (41.8% logic, 58.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_23_o'
+  Clock period: 3.205ns (frequency: 312.012MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.205ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/RXbuffer/rePTR_3_LDC (LATCH)
+  Destination:       UARTWithFIFO1/RXbuffer/rePTR_3_LDC (LATCH)
+  Source Clock:      UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_23_o falling
+  Destination Clock: UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_23_o falling
+
+  Data Path: UARTWithFIFO1/RXbuffer/rePTR_3_LDC to UARTWithFIFO1/RXbuffer/rePTR_3_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              7   0.581   1.186  UARTWithFIFO1/RXbuffer/rePTR_3_LDC (UARTWithFIFO1/RXbuffer/rePTR_3_LDC)
+     LUT5:I1->O            2   0.254   0.725  UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_24_o1 (UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_24_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/RXbuffer/rePTR_3_LDC
+    ----------------------------------------
+    Total                      3.205ns (1.294ns logic, 1.911ns route)
+                                       (40.4% logic, 59.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_21_o'
+  Clock period: 3.099ns (frequency: 322.685MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.099ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/RXbuffer/rePTR_4_LDC (LATCH)
+  Destination:       UARTWithFIFO1/RXbuffer/rePTR_4_LDC (LATCH)
+  Source Clock:      UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_21_o falling
+  Destination Clock: UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_21_o falling
+
+  Data Path: UARTWithFIFO1/RXbuffer/rePTR_4_LDC to UARTWithFIFO1/RXbuffer/rePTR_4_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.581   1.080  UARTWithFIFO1/RXbuffer/rePTR_4_LDC (UARTWithFIFO1/RXbuffer/rePTR_4_LDC)
+     LUT5:I1->O            2   0.254   0.725  UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_22_o1 (UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_22_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/RXbuffer/rePTR_4_LDC
+    ----------------------------------------
+    Total                      3.099ns (1.294ns logic, 1.805ns route)
+                                       (41.8% logic, 58.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UARTWithFIFO1/RXbuffer/reset_wrPTR[0]_AND_17_o'
+  Clock period: 3.171ns (frequency: 315.358MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.171ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/RXbuffer/wrPTR_0_LDC (LATCH)
+  Destination:       UARTWithFIFO1/RXbuffer/wrPTR_0_LDC (LATCH)
+  Source Clock:      UARTWithFIFO1/RXbuffer/reset_wrPTR[0]_AND_17_o falling
+  Destination Clock: UARTWithFIFO1/RXbuffer/reset_wrPTR[0]_AND_17_o falling
+
+  Data Path: UARTWithFIFO1/RXbuffer/wrPTR_0_LDC to UARTWithFIFO1/RXbuffer/wrPTR_0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              6   0.581   1.152  UARTWithFIFO1/RXbuffer/wrPTR_0_LDC (UARTWithFIFO1/RXbuffer/wrPTR_0_LDC)
+     LUT5:I1->O            2   0.254   0.725  UARTWithFIFO1/RXbuffer/reset_wrPTR[0]_AND_18_o1 (UARTWithFIFO1/RXbuffer/reset_wrPTR[0]_AND_18_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/RXbuffer/wrPTR_0_LDC
+    ----------------------------------------
+    Total                      3.171ns (1.294ns logic, 1.877ns route)
+                                       (40.8% logic, 59.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UARTWithFIFO1/RXbuffer/reset_wrPTR[1]_AND_15_o'
+  Clock period: 3.099ns (frequency: 322.685MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.099ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/RXbuffer/wrPTR_1_LDC (LATCH)
+  Destination:       UARTWithFIFO1/RXbuffer/wrPTR_1_LDC (LATCH)
+  Source Clock:      UARTWithFIFO1/RXbuffer/reset_wrPTR[1]_AND_15_o falling
+  Destination Clock: UARTWithFIFO1/RXbuffer/reset_wrPTR[1]_AND_15_o falling
+
+  Data Path: UARTWithFIFO1/RXbuffer/wrPTR_1_LDC to UARTWithFIFO1/RXbuffer/wrPTR_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.581   1.080  UARTWithFIFO1/RXbuffer/wrPTR_1_LDC (UARTWithFIFO1/RXbuffer/wrPTR_1_LDC)
+     LUT5:I1->O            2   0.254   0.725  UARTWithFIFO1/RXbuffer/reset_wrPTR[1]_AND_16_o1 (UARTWithFIFO1/RXbuffer/reset_wrPTR[1]_AND_16_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/RXbuffer/wrPTR_1_LDC
+    ----------------------------------------
+    Total                      3.099ns (1.294ns logic, 1.805ns route)
+                                       (41.8% logic, 58.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UARTWithFIFO1/RXbuffer/reset_wrPTR[2]_AND_13_o'
+  Clock period: 3.136ns (frequency: 318.878MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.136ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/RXbuffer/wrPTR_2_LDC (LATCH)
+  Destination:       UARTWithFIFO1/RXbuffer/wrPTR_2_LDC (LATCH)
+  Source Clock:      UARTWithFIFO1/RXbuffer/reset_wrPTR[2]_AND_13_o falling
+  Destination Clock: UARTWithFIFO1/RXbuffer/reset_wrPTR[2]_AND_13_o falling
+
+  Data Path: UARTWithFIFO1/RXbuffer/wrPTR_2_LDC to UARTWithFIFO1/RXbuffer/wrPTR_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              5   0.581   1.117  UARTWithFIFO1/RXbuffer/wrPTR_2_LDC (UARTWithFIFO1/RXbuffer/wrPTR_2_LDC)
+     LUT5:I1->O            2   0.254   0.725  UARTWithFIFO1/RXbuffer/reset_wrPTR[2]_AND_14_o1 (UARTWithFIFO1/RXbuffer/reset_wrPTR[2]_AND_14_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/RXbuffer/wrPTR_2_LDC
+    ----------------------------------------
+    Total                      3.136ns (1.294ns logic, 1.842ns route)
+                                       (41.3% logic, 58.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UARTWithFIFO1/RXbuffer/reset_wrPTR[3]_AND_11_o'
+  Clock period: 3.099ns (frequency: 322.685MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.099ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/RXbuffer/wrPTR_3_LDC (LATCH)
+  Destination:       UARTWithFIFO1/RXbuffer/wrPTR_3_LDC (LATCH)
+  Source Clock:      UARTWithFIFO1/RXbuffer/reset_wrPTR[3]_AND_11_o falling
+  Destination Clock: UARTWithFIFO1/RXbuffer/reset_wrPTR[3]_AND_11_o falling
+
+  Data Path: UARTWithFIFO1/RXbuffer/wrPTR_3_LDC to UARTWithFIFO1/RXbuffer/wrPTR_3_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.581   1.080  UARTWithFIFO1/RXbuffer/wrPTR_3_LDC (UARTWithFIFO1/RXbuffer/wrPTR_3_LDC)
+     LUT5:I1->O            2   0.254   0.725  UARTWithFIFO1/RXbuffer/reset_wrPTR[3]_AND_12_o1 (UARTWithFIFO1/RXbuffer/reset_wrPTR[3]_AND_12_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/RXbuffer/wrPTR_3_LDC
+    ----------------------------------------
+    Total                      3.099ns (1.294ns logic, 1.805ns route)
+                                       (41.8% logic, 58.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UARTWithFIFO1/RXbuffer/reset_wrPTR[4]_AND_9_o'
+  Clock period: 3.136ns (frequency: 318.878MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.136ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/RXbuffer/wrPTR_4_LDC (LATCH)
+  Destination:       UARTWithFIFO1/RXbuffer/wrPTR_4_LDC (LATCH)
+  Source Clock:      UARTWithFIFO1/RXbuffer/reset_wrPTR[4]_AND_9_o falling
+  Destination Clock: UARTWithFIFO1/RXbuffer/reset_wrPTR[4]_AND_9_o falling
+
+  Data Path: UARTWithFIFO1/RXbuffer/wrPTR_4_LDC to UARTWithFIFO1/RXbuffer/wrPTR_4_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              5   0.581   1.117  UARTWithFIFO1/RXbuffer/wrPTR_4_LDC (UARTWithFIFO1/RXbuffer/wrPTR_4_LDC)
+     LUT5:I1->O            2   0.254   0.725  UARTWithFIFO1/RXbuffer/reset_wrPTR[4]_AND_10_o1 (UARTWithFIFO1/RXbuffer/reset_wrPTR[4]_AND_10_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/RXbuffer/wrPTR_4_LDC
+    ----------------------------------------
+    Total                      3.136ns (1.294ns logic, 1.842ns route)
+                                       (41.3% logic, 58.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_19_o'
+  Clock period: 3.099ns (frequency: 322.685MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.099ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/TXbuffer/rePTR_5_LDC (LATCH)
+  Destination:       UARTWithFIFO1/TXbuffer/rePTR_5_LDC (LATCH)
+  Source Clock:      UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_19_o falling
+  Destination Clock: UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_19_o falling
+
+  Data Path: UARTWithFIFO1/TXbuffer/rePTR_5_LDC to UARTWithFIFO1/TXbuffer/rePTR_5_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.581   1.080  UARTWithFIFO1/TXbuffer/rePTR_5_LDC (UARTWithFIFO1/TXbuffer/rePTR_5_LDC)
+     LUT5:I1->O            2   0.254   0.725  UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_20_o1 (UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_20_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/TXbuffer/rePTR_5_LDC
+    ----------------------------------------
+    Total                      3.099ns (1.294ns logic, 1.805ns route)
+                                       (41.8% logic, 58.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UARTWithFIFO1/TXbuffer/reset_wrPTR[5]_AND_7_o'
+  Clock period: 3.099ns (frequency: 322.685MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.099ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/TXbuffer/wrPTR_5_LDC (LATCH)
+  Destination:       UARTWithFIFO1/TXbuffer/wrPTR_5_LDC (LATCH)
+  Source Clock:      UARTWithFIFO1/TXbuffer/reset_wrPTR[5]_AND_7_o falling
+  Destination Clock: UARTWithFIFO1/TXbuffer/reset_wrPTR[5]_AND_7_o falling
+
+  Data Path: UARTWithFIFO1/TXbuffer/wrPTR_5_LDC to UARTWithFIFO1/TXbuffer/wrPTR_5_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.581   1.080  UARTWithFIFO1/TXbuffer/wrPTR_5_LDC (UARTWithFIFO1/TXbuffer/wrPTR_5_LDC)
+     LUT5:I1->O            2   0.254   0.725  UARTWithFIFO1/TXbuffer/reset_wrPTR[5]_AND_8_o1 (UARTWithFIFO1/TXbuffer/reset_wrPTR[5]_AND_8_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/TXbuffer/wrPTR_5_LDC
+    ----------------------------------------
+    Total                      3.099ns (1.294ns logic, 1.805ns route)
+                                       (41.8% logic, 58.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_29_o'
+  Clock period: 3.205ns (frequency: 312.012MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.205ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/TXbuffer/rePTR_0_LDC (LATCH)
+  Destination:       UARTWithFIFO1/TXbuffer/rePTR_0_LDC (LATCH)
+  Source Clock:      UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_29_o falling
+  Destination Clock: UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_29_o falling
+
+  Data Path: UARTWithFIFO1/TXbuffer/rePTR_0_LDC to UARTWithFIFO1/TXbuffer/rePTR_0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              7   0.581   1.186  UARTWithFIFO1/TXbuffer/rePTR_0_LDC (UARTWithFIFO1/TXbuffer/rePTR_0_LDC)
+     LUT5:I1->O            2   0.254   0.725  UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_30_o1 (UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_30_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/TXbuffer/rePTR_0_LDC
+    ----------------------------------------
+    Total                      3.205ns (1.294ns logic, 1.911ns route)
+                                       (40.4% logic, 59.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_27_o'
+  Clock period: 3.099ns (frequency: 322.685MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.099ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/TXbuffer/rePTR_1_LDC (LATCH)
+  Destination:       UARTWithFIFO1/TXbuffer/rePTR_1_LDC (LATCH)
+  Source Clock:      UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_27_o falling
+  Destination Clock: UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_27_o falling
+
+  Data Path: UARTWithFIFO1/TXbuffer/rePTR_1_LDC to UARTWithFIFO1/TXbuffer/rePTR_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.581   1.080  UARTWithFIFO1/TXbuffer/rePTR_1_LDC (UARTWithFIFO1/TXbuffer/rePTR_1_LDC)
+     LUT5:I1->O            2   0.254   0.725  UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_28_o1 (UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_28_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/TXbuffer/rePTR_1_LDC
+    ----------------------------------------
+    Total                      3.099ns (1.294ns logic, 1.805ns route)
+                                       (41.8% logic, 58.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_25_o'
+  Clock period: 3.099ns (frequency: 322.685MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.099ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/TXbuffer/rePTR_2_LDC (LATCH)
+  Destination:       UARTWithFIFO1/TXbuffer/rePTR_2_LDC (LATCH)
+  Source Clock:      UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_25_o falling
+  Destination Clock: UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_25_o falling
+
+  Data Path: UARTWithFIFO1/TXbuffer/rePTR_2_LDC to UARTWithFIFO1/TXbuffer/rePTR_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.581   1.080  UARTWithFIFO1/TXbuffer/rePTR_2_LDC (UARTWithFIFO1/TXbuffer/rePTR_2_LDC)
+     LUT5:I1->O            2   0.254   0.725  UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_26_o1 (UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_26_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/TXbuffer/rePTR_2_LDC
+    ----------------------------------------
+    Total                      3.099ns (1.294ns logic, 1.805ns route)
+                                       (41.8% logic, 58.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_23_o'
+  Clock period: 3.205ns (frequency: 312.012MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.205ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/TXbuffer/rePTR_3_LDC (LATCH)
+  Destination:       UARTWithFIFO1/TXbuffer/rePTR_3_LDC (LATCH)
+  Source Clock:      UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_23_o falling
+  Destination Clock: UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_23_o falling
+
+  Data Path: UARTWithFIFO1/TXbuffer/rePTR_3_LDC to UARTWithFIFO1/TXbuffer/rePTR_3_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              7   0.581   1.186  UARTWithFIFO1/TXbuffer/rePTR_3_LDC (UARTWithFIFO1/TXbuffer/rePTR_3_LDC)
+     LUT5:I1->O            2   0.254   0.725  UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_24_o1 (UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_24_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/TXbuffer/rePTR_3_LDC
+    ----------------------------------------
+    Total                      3.205ns (1.294ns logic, 1.911ns route)
+                                       (40.4% logic, 59.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_21_o'
+  Clock period: 3.099ns (frequency: 322.685MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.099ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/TXbuffer/rePTR_4_LDC (LATCH)
+  Destination:       UARTWithFIFO1/TXbuffer/rePTR_4_LDC (LATCH)
+  Source Clock:      UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_21_o falling
+  Destination Clock: UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_21_o falling
+
+  Data Path: UARTWithFIFO1/TXbuffer/rePTR_4_LDC to UARTWithFIFO1/TXbuffer/rePTR_4_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.581   1.080  UARTWithFIFO1/TXbuffer/rePTR_4_LDC (UARTWithFIFO1/TXbuffer/rePTR_4_LDC)
+     LUT5:I1->O            2   0.254   0.725  UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_22_o1 (UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_22_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/TXbuffer/rePTR_4_LDC
+    ----------------------------------------
+    Total                      3.099ns (1.294ns logic, 1.805ns route)
+                                       (41.8% logic, 58.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UARTWithFIFO1/TXbuffer/reset_wrPTR[0]_AND_17_o'
+  Clock period: 3.171ns (frequency: 315.358MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.171ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/TXbuffer/wrPTR_0_LDC (LATCH)
+  Destination:       UARTWithFIFO1/TXbuffer/wrPTR_0_LDC (LATCH)
+  Source Clock:      UARTWithFIFO1/TXbuffer/reset_wrPTR[0]_AND_17_o falling
+  Destination Clock: UARTWithFIFO1/TXbuffer/reset_wrPTR[0]_AND_17_o falling
+
+  Data Path: UARTWithFIFO1/TXbuffer/wrPTR_0_LDC to UARTWithFIFO1/TXbuffer/wrPTR_0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              6   0.581   1.152  UARTWithFIFO1/TXbuffer/wrPTR_0_LDC (UARTWithFIFO1/TXbuffer/wrPTR_0_LDC)
+     LUT5:I1->O            2   0.254   0.725  UARTWithFIFO1/TXbuffer/reset_wrPTR[0]_AND_18_o1 (UARTWithFIFO1/TXbuffer/reset_wrPTR[0]_AND_18_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/TXbuffer/wrPTR_0_LDC
+    ----------------------------------------
+    Total                      3.171ns (1.294ns logic, 1.877ns route)
+                                       (40.8% logic, 59.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UARTWithFIFO1/TXbuffer/reset_wrPTR[1]_AND_15_o'
+  Clock period: 3.099ns (frequency: 322.685MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.099ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/TXbuffer/wrPTR_1_LDC (LATCH)
+  Destination:       UARTWithFIFO1/TXbuffer/wrPTR_1_LDC (LATCH)
+  Source Clock:      UARTWithFIFO1/TXbuffer/reset_wrPTR[1]_AND_15_o falling
+  Destination Clock: UARTWithFIFO1/TXbuffer/reset_wrPTR[1]_AND_15_o falling
+
+  Data Path: UARTWithFIFO1/TXbuffer/wrPTR_1_LDC to UARTWithFIFO1/TXbuffer/wrPTR_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.581   1.080  UARTWithFIFO1/TXbuffer/wrPTR_1_LDC (UARTWithFIFO1/TXbuffer/wrPTR_1_LDC)
+     LUT5:I1->O            2   0.254   0.725  UARTWithFIFO1/TXbuffer/reset_wrPTR[1]_AND_16_o1 (UARTWithFIFO1/TXbuffer/reset_wrPTR[1]_AND_16_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/TXbuffer/wrPTR_1_LDC
+    ----------------------------------------
+    Total                      3.099ns (1.294ns logic, 1.805ns route)
+                                       (41.8% logic, 58.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UARTWithFIFO1/TXbuffer/reset_wrPTR[2]_AND_13_o'
+  Clock period: 3.136ns (frequency: 318.878MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.136ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/TXbuffer/wrPTR_2_LDC (LATCH)
+  Destination:       UARTWithFIFO1/TXbuffer/wrPTR_2_LDC (LATCH)
+  Source Clock:      UARTWithFIFO1/TXbuffer/reset_wrPTR[2]_AND_13_o falling
+  Destination Clock: UARTWithFIFO1/TXbuffer/reset_wrPTR[2]_AND_13_o falling
+
+  Data Path: UARTWithFIFO1/TXbuffer/wrPTR_2_LDC to UARTWithFIFO1/TXbuffer/wrPTR_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              5   0.581   1.117  UARTWithFIFO1/TXbuffer/wrPTR_2_LDC (UARTWithFIFO1/TXbuffer/wrPTR_2_LDC)
+     LUT5:I1->O            2   0.254   0.725  UARTWithFIFO1/TXbuffer/reset_wrPTR[2]_AND_14_o1 (UARTWithFIFO1/TXbuffer/reset_wrPTR[2]_AND_14_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/TXbuffer/wrPTR_2_LDC
+    ----------------------------------------
+    Total                      3.136ns (1.294ns logic, 1.842ns route)
+                                       (41.3% logic, 58.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UARTWithFIFO1/TXbuffer/reset_wrPTR[3]_AND_11_o'
+  Clock period: 3.099ns (frequency: 322.685MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.099ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/TXbuffer/wrPTR_3_LDC (LATCH)
+  Destination:       UARTWithFIFO1/TXbuffer/wrPTR_3_LDC (LATCH)
+  Source Clock:      UARTWithFIFO1/TXbuffer/reset_wrPTR[3]_AND_11_o falling
+  Destination Clock: UARTWithFIFO1/TXbuffer/reset_wrPTR[3]_AND_11_o falling
+
+  Data Path: UARTWithFIFO1/TXbuffer/wrPTR_3_LDC to UARTWithFIFO1/TXbuffer/wrPTR_3_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.581   1.080  UARTWithFIFO1/TXbuffer/wrPTR_3_LDC (UARTWithFIFO1/TXbuffer/wrPTR_3_LDC)
+     LUT5:I1->O            2   0.254   0.725  UARTWithFIFO1/TXbuffer/reset_wrPTR[3]_AND_12_o1 (UARTWithFIFO1/TXbuffer/reset_wrPTR[3]_AND_12_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/TXbuffer/wrPTR_3_LDC
+    ----------------------------------------
+    Total                      3.099ns (1.294ns logic, 1.805ns route)
+                                       (41.8% logic, 58.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UARTWithFIFO1/TXbuffer/reset_wrPTR[4]_AND_9_o'
+  Clock period: 3.136ns (frequency: 318.878MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.136ns (Levels of Logic = 1)
+  Source:            UARTWithFIFO1/TXbuffer/wrPTR_4_LDC (LATCH)
+  Destination:       UARTWithFIFO1/TXbuffer/wrPTR_4_LDC (LATCH)
+  Source Clock:      UARTWithFIFO1/TXbuffer/reset_wrPTR[4]_AND_9_o falling
+  Destination Clock: UARTWithFIFO1/TXbuffer/reset_wrPTR[4]_AND_9_o falling
+
+  Data Path: UARTWithFIFO1/TXbuffer/wrPTR_4_LDC to UARTWithFIFO1/TXbuffer/wrPTR_4_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              5   0.581   1.117  UARTWithFIFO1/TXbuffer/wrPTR_4_LDC (UARTWithFIFO1/TXbuffer/wrPTR_4_LDC)
+     LUT5:I1->O            2   0.254   0.725  UARTWithFIFO1/TXbuffer/reset_wrPTR[4]_AND_10_o1 (UARTWithFIFO1/TXbuffer/reset_wrPTR[4]_AND_10_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/TXbuffer/wrPTR_4_LDC
+    ----------------------------------------
+    Total                      3.136ns (1.294ns logic, 1.842ns route)
+                                       (41.3% logic, 58.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clkcntr_4'
-  Total number of paths / destination ports: 64 / 64
+  Total number of paths / destination ports: 112 / 109
 -------------------------------------------------------------------------
-Offset:              4.902ns (Levels of Logic = 2)
+Offset:              5.552ns (Levels of Logic = 3)
   Source:            reset (PAD)
-  Destination:       UARTWithFIFO1/uart1/rx_buffer_8 (FF)
+  Destination:       UARTWithFIFO1/RXbuffer/re_state_reg (FF)
   Destination Clock: clkcntr_4 rising
 
-  Data Path: reset to UARTWithFIFO1/uart1/rx_buffer_8
+  Data Path: reset to UARTWithFIFO1/RXbuffer/re_state_reg
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            38   1.328   2.075  reset_IBUF (UARTWithFIFO1/uart1/reset_n_inv)
-     LUT6:I0->O            8   0.254   0.943  UARTWithFIFO1/uart1/_n0210_inv1 (UARTWithFIFO1/uart1/_n0210_inv)
-     FDE:CE                    0.302          UARTWithFIFO1/uart1/rx_buffer_1
+     IBUF:I->O            86   1.328   2.530  reset_IBUF (reset_IBUF)
+     LUT5:I0->O            1   0.254   1.112  UARTWithFIFO1/RXbuffer/Mmux_re_state_next18_SW3 (N15)
+     LUT6:I1->O            1   0.254   0.000  UARTWithFIFO1/RXbuffer/Mmux_re_state_next18 (UARTWithFIFO1/RXbuffer/re_state_next)
+     FDR:D                     0.074          UARTWithFIFO1/RXbuffer/re_state_reg
     ----------------------------------------
-    Total                      4.902ns (1.884ns logic, 3.018ns route)
-                                       (38.4% logic, 61.6% route)
+    Total                      5.552ns (1.910ns logic, 3.642ns route)
+                                       (34.4% logic, 65.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_19_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.970ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/RXbuffer/rePTR_5_LDC (LATCH)
+  Destination Clock: UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_19_o falling
+
+  Data Path: reset to UARTWithFIFO1/RXbuffer/rePTR_5_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            86   1.328   2.208  reset_IBUF (reset_IBUF)
+     LUT5:I3->O            2   0.250   0.725  UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_20_o1 (UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_20_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/RXbuffer/rePTR_5_LDC
+    ----------------------------------------
+    Total                      4.970ns (2.037ns logic, 2.933ns route)
+                                       (41.0% logic, 59.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UARTWithFIFO1/RXbuffer/reset_wrPTR[5]_AND_7_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.866ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/RXbuffer/wrPTR_5_LDC (LATCH)
+  Destination Clock: UARTWithFIFO1/RXbuffer/reset_wrPTR[5]_AND_7_o falling
+
+  Data Path: reset to UARTWithFIFO1/RXbuffer/wrPTR_5_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            86   1.328   2.100  reset_IBUF (reset_IBUF)
+     LUT5:I4->O            2   0.254   0.725  UARTWithFIFO1/RXbuffer/reset_wrPTR[5]_AND_8_o1 (UARTWithFIFO1/RXbuffer/reset_wrPTR[5]_AND_8_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/RXbuffer/wrPTR_5_LDC
+    ----------------------------------------
+    Total                      4.866ns (2.041ns logic, 2.825ns route)
+                                       (41.9% logic, 58.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_29_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.970ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/RXbuffer/rePTR_0_LDC (LATCH)
+  Destination Clock: UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_29_o falling
+
+  Data Path: reset to UARTWithFIFO1/RXbuffer/rePTR_0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            86   1.328   2.208  reset_IBUF (reset_IBUF)
+     LUT5:I3->O            2   0.250   0.725  UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_30_o1 (UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_30_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/RXbuffer/rePTR_0_LDC
+    ----------------------------------------
+    Total                      4.970ns (2.037ns logic, 2.933ns route)
+                                       (41.0% logic, 59.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_27_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.970ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/RXbuffer/rePTR_1_LDC (LATCH)
+  Destination Clock: UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_27_o falling
+
+  Data Path: reset to UARTWithFIFO1/RXbuffer/rePTR_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            86   1.328   2.208  reset_IBUF (reset_IBUF)
+     LUT5:I3->O            2   0.250   0.725  UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_28_o1 (UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_28_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/RXbuffer/rePTR_1_LDC
+    ----------------------------------------
+    Total                      4.970ns (2.037ns logic, 2.933ns route)
+                                       (41.0% logic, 59.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_25_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.970ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/RXbuffer/rePTR_2_LDC (LATCH)
+  Destination Clock: UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_25_o falling
+
+  Data Path: reset to UARTWithFIFO1/RXbuffer/rePTR_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            86   1.328   2.208  reset_IBUF (reset_IBUF)
+     LUT5:I3->O            2   0.250   0.725  UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_26_o1 (UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_26_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/RXbuffer/rePTR_2_LDC
+    ----------------------------------------
+    Total                      4.970ns (2.037ns logic, 2.933ns route)
+                                       (41.0% logic, 59.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_23_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.970ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/RXbuffer/rePTR_3_LDC (LATCH)
+  Destination Clock: UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_23_o falling
+
+  Data Path: reset to UARTWithFIFO1/RXbuffer/rePTR_3_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            86   1.328   2.208  reset_IBUF (reset_IBUF)
+     LUT5:I3->O            2   0.250   0.725  UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_24_o1 (UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_24_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/RXbuffer/rePTR_3_LDC
+    ----------------------------------------
+    Total                      4.970ns (2.037ns logic, 2.933ns route)
+                                       (41.0% logic, 59.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_21_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.970ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/RXbuffer/rePTR_4_LDC (LATCH)
+  Destination Clock: UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_21_o falling
+
+  Data Path: reset to UARTWithFIFO1/RXbuffer/rePTR_4_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            86   1.328   2.208  reset_IBUF (reset_IBUF)
+     LUT5:I3->O            2   0.250   0.725  UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_22_o1 (UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_22_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/RXbuffer/rePTR_4_LDC
+    ----------------------------------------
+    Total                      4.970ns (2.037ns logic, 2.933ns route)
+                                       (41.0% logic, 59.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UARTWithFIFO1/RXbuffer/reset_wrPTR[0]_AND_17_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.866ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/RXbuffer/wrPTR_0_LDC (LATCH)
+  Destination Clock: UARTWithFIFO1/RXbuffer/reset_wrPTR[0]_AND_17_o falling
+
+  Data Path: reset to UARTWithFIFO1/RXbuffer/wrPTR_0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            86   1.328   2.100  reset_IBUF (reset_IBUF)
+     LUT5:I4->O            2   0.254   0.725  UARTWithFIFO1/RXbuffer/reset_wrPTR[0]_AND_18_o1 (UARTWithFIFO1/RXbuffer/reset_wrPTR[0]_AND_18_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/RXbuffer/wrPTR_0_LDC
+    ----------------------------------------
+    Total                      4.866ns (2.041ns logic, 2.825ns route)
+                                       (41.9% logic, 58.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UARTWithFIFO1/RXbuffer/reset_wrPTR[1]_AND_15_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.866ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/RXbuffer/wrPTR_1_LDC (LATCH)
+  Destination Clock: UARTWithFIFO1/RXbuffer/reset_wrPTR[1]_AND_15_o falling
+
+  Data Path: reset to UARTWithFIFO1/RXbuffer/wrPTR_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            86   1.328   2.100  reset_IBUF (reset_IBUF)
+     LUT5:I4->O            2   0.254   0.725  UARTWithFIFO1/RXbuffer/reset_wrPTR[1]_AND_16_o1 (UARTWithFIFO1/RXbuffer/reset_wrPTR[1]_AND_16_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/RXbuffer/wrPTR_1_LDC
+    ----------------------------------------
+    Total                      4.866ns (2.041ns logic, 2.825ns route)
+                                       (41.9% logic, 58.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UARTWithFIFO1/RXbuffer/reset_wrPTR[2]_AND_13_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.866ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/RXbuffer/wrPTR_2_LDC (LATCH)
+  Destination Clock: UARTWithFIFO1/RXbuffer/reset_wrPTR[2]_AND_13_o falling
+
+  Data Path: reset to UARTWithFIFO1/RXbuffer/wrPTR_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            86   1.328   2.100  reset_IBUF (reset_IBUF)
+     LUT5:I4->O            2   0.254   0.725  UARTWithFIFO1/RXbuffer/reset_wrPTR[2]_AND_14_o1 (UARTWithFIFO1/RXbuffer/reset_wrPTR[2]_AND_14_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/RXbuffer/wrPTR_2_LDC
+    ----------------------------------------
+    Total                      4.866ns (2.041ns logic, 2.825ns route)
+                                       (41.9% logic, 58.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UARTWithFIFO1/RXbuffer/reset_wrPTR[3]_AND_11_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.866ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/RXbuffer/wrPTR_3_LDC (LATCH)
+  Destination Clock: UARTWithFIFO1/RXbuffer/reset_wrPTR[3]_AND_11_o falling
+
+  Data Path: reset to UARTWithFIFO1/RXbuffer/wrPTR_3_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            86   1.328   2.100  reset_IBUF (reset_IBUF)
+     LUT5:I4->O            2   0.254   0.725  UARTWithFIFO1/RXbuffer/reset_wrPTR[3]_AND_12_o1 (UARTWithFIFO1/RXbuffer/reset_wrPTR[3]_AND_12_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/RXbuffer/wrPTR_3_LDC
+    ----------------------------------------
+    Total                      4.866ns (2.041ns logic, 2.825ns route)
+                                       (41.9% logic, 58.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UARTWithFIFO1/RXbuffer/reset_wrPTR[4]_AND_9_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.866ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/RXbuffer/wrPTR_4_LDC (LATCH)
+  Destination Clock: UARTWithFIFO1/RXbuffer/reset_wrPTR[4]_AND_9_o falling
+
+  Data Path: reset to UARTWithFIFO1/RXbuffer/wrPTR_4_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            86   1.328   2.100  reset_IBUF (reset_IBUF)
+     LUT5:I4->O            2   0.254   0.725  UARTWithFIFO1/RXbuffer/reset_wrPTR[4]_AND_10_o1 (UARTWithFIFO1/RXbuffer/reset_wrPTR[4]_AND_10_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/RXbuffer/wrPTR_4_LDC
+    ----------------------------------------
+    Total                      4.866ns (2.041ns logic, 2.825ns route)
+                                       (41.9% logic, 58.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_19_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.970ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/TXbuffer/rePTR_5_LDC (LATCH)
+  Destination Clock: UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_19_o falling
+
+  Data Path: reset to UARTWithFIFO1/TXbuffer/rePTR_5_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            86   1.328   2.208  reset_IBUF (reset_IBUF)
+     LUT5:I3->O            2   0.250   0.725  UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_20_o1 (UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_20_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/TXbuffer/rePTR_5_LDC
+    ----------------------------------------
+    Total                      4.970ns (2.037ns logic, 2.933ns route)
+                                       (41.0% logic, 59.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UARTWithFIFO1/TXbuffer/reset_wrPTR[5]_AND_7_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.866ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/TXbuffer/wrPTR_5_LDC (LATCH)
+  Destination Clock: UARTWithFIFO1/TXbuffer/reset_wrPTR[5]_AND_7_o falling
+
+  Data Path: reset to UARTWithFIFO1/TXbuffer/wrPTR_5_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            86   1.328   2.100  reset_IBUF (reset_IBUF)
+     LUT5:I4->O            2   0.254   0.725  UARTWithFIFO1/TXbuffer/reset_wrPTR[5]_AND_8_o1 (UARTWithFIFO1/TXbuffer/reset_wrPTR[5]_AND_8_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/TXbuffer/wrPTR_5_LDC
+    ----------------------------------------
+    Total                      4.866ns (2.041ns logic, 2.825ns route)
+                                       (41.9% logic, 58.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_29_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.970ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/TXbuffer/rePTR_0_LDC (LATCH)
+  Destination Clock: UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_29_o falling
+
+  Data Path: reset to UARTWithFIFO1/TXbuffer/rePTR_0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            86   1.328   2.208  reset_IBUF (reset_IBUF)
+     LUT5:I3->O            2   0.250   0.725  UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_30_o1 (UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_30_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/TXbuffer/rePTR_0_LDC
+    ----------------------------------------
+    Total                      4.970ns (2.037ns logic, 2.933ns route)
+                                       (41.0% logic, 59.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_27_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.970ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/TXbuffer/rePTR_1_LDC (LATCH)
+  Destination Clock: UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_27_o falling
+
+  Data Path: reset to UARTWithFIFO1/TXbuffer/rePTR_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            86   1.328   2.208  reset_IBUF (reset_IBUF)
+     LUT5:I3->O            2   0.250   0.725  UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_28_o1 (UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_28_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/TXbuffer/rePTR_1_LDC
+    ----------------------------------------
+    Total                      4.970ns (2.037ns logic, 2.933ns route)
+                                       (41.0% logic, 59.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_25_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.970ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/TXbuffer/rePTR_2_LDC (LATCH)
+  Destination Clock: UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_25_o falling
+
+  Data Path: reset to UARTWithFIFO1/TXbuffer/rePTR_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            86   1.328   2.208  reset_IBUF (reset_IBUF)
+     LUT5:I3->O            2   0.250   0.725  UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_26_o1 (UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_26_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/TXbuffer/rePTR_2_LDC
+    ----------------------------------------
+    Total                      4.970ns (2.037ns logic, 2.933ns route)
+                                       (41.0% logic, 59.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_23_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.970ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/TXbuffer/rePTR_3_LDC (LATCH)
+  Destination Clock: UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_23_o falling
+
+  Data Path: reset to UARTWithFIFO1/TXbuffer/rePTR_3_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            86   1.328   2.208  reset_IBUF (reset_IBUF)
+     LUT5:I3->O            2   0.250   0.725  UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_24_o1 (UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_24_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/TXbuffer/rePTR_3_LDC
+    ----------------------------------------
+    Total                      4.970ns (2.037ns logic, 2.933ns route)
+                                       (41.0% logic, 59.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_21_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.970ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/TXbuffer/rePTR_4_LDC (LATCH)
+  Destination Clock: UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_21_o falling
+
+  Data Path: reset to UARTWithFIFO1/TXbuffer/rePTR_4_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            86   1.328   2.208  reset_IBUF (reset_IBUF)
+     LUT5:I3->O            2   0.250   0.725  UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_22_o1 (UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_22_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/TXbuffer/rePTR_4_LDC
+    ----------------------------------------
+    Total                      4.970ns (2.037ns logic, 2.933ns route)
+                                       (41.0% logic, 59.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UARTWithFIFO1/TXbuffer/reset_wrPTR[0]_AND_17_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.866ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/TXbuffer/wrPTR_0_LDC (LATCH)
+  Destination Clock: UARTWithFIFO1/TXbuffer/reset_wrPTR[0]_AND_17_o falling
+
+  Data Path: reset to UARTWithFIFO1/TXbuffer/wrPTR_0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            86   1.328   2.100  reset_IBUF (reset_IBUF)
+     LUT5:I4->O            2   0.254   0.725  UARTWithFIFO1/TXbuffer/reset_wrPTR[0]_AND_18_o1 (UARTWithFIFO1/TXbuffer/reset_wrPTR[0]_AND_18_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/TXbuffer/wrPTR_0_LDC
+    ----------------------------------------
+    Total                      4.866ns (2.041ns logic, 2.825ns route)
+                                       (41.9% logic, 58.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UARTWithFIFO1/TXbuffer/reset_wrPTR[1]_AND_15_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.866ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/TXbuffer/wrPTR_1_LDC (LATCH)
+  Destination Clock: UARTWithFIFO1/TXbuffer/reset_wrPTR[1]_AND_15_o falling
+
+  Data Path: reset to UARTWithFIFO1/TXbuffer/wrPTR_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            86   1.328   2.100  reset_IBUF (reset_IBUF)
+     LUT5:I4->O            2   0.254   0.725  UARTWithFIFO1/TXbuffer/reset_wrPTR[1]_AND_16_o1 (UARTWithFIFO1/TXbuffer/reset_wrPTR[1]_AND_16_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/TXbuffer/wrPTR_1_LDC
+    ----------------------------------------
+    Total                      4.866ns (2.041ns logic, 2.825ns route)
+                                       (41.9% logic, 58.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UARTWithFIFO1/TXbuffer/reset_wrPTR[2]_AND_13_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.866ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/TXbuffer/wrPTR_2_LDC (LATCH)
+  Destination Clock: UARTWithFIFO1/TXbuffer/reset_wrPTR[2]_AND_13_o falling
+
+  Data Path: reset to UARTWithFIFO1/TXbuffer/wrPTR_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            86   1.328   2.100  reset_IBUF (reset_IBUF)
+     LUT5:I4->O            2   0.254   0.725  UARTWithFIFO1/TXbuffer/reset_wrPTR[2]_AND_14_o1 (UARTWithFIFO1/TXbuffer/reset_wrPTR[2]_AND_14_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/TXbuffer/wrPTR_2_LDC
+    ----------------------------------------
+    Total                      4.866ns (2.041ns logic, 2.825ns route)
+                                       (41.9% logic, 58.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UARTWithFIFO1/TXbuffer/reset_wrPTR[3]_AND_11_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.866ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/TXbuffer/wrPTR_3_LDC (LATCH)
+  Destination Clock: UARTWithFIFO1/TXbuffer/reset_wrPTR[3]_AND_11_o falling
+
+  Data Path: reset to UARTWithFIFO1/TXbuffer/wrPTR_3_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            86   1.328   2.100  reset_IBUF (reset_IBUF)
+     LUT5:I4->O            2   0.254   0.725  UARTWithFIFO1/TXbuffer/reset_wrPTR[3]_AND_12_o1 (UARTWithFIFO1/TXbuffer/reset_wrPTR[3]_AND_12_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/TXbuffer/wrPTR_3_LDC
+    ----------------------------------------
+    Total                      4.866ns (2.041ns logic, 2.825ns route)
+                                       (41.9% logic, 58.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UARTWithFIFO1/TXbuffer/reset_wrPTR[4]_AND_9_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.866ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       UARTWithFIFO1/TXbuffer/wrPTR_4_LDC (LATCH)
+  Destination Clock: UARTWithFIFO1/TXbuffer/reset_wrPTR[4]_AND_9_o falling
+
+  Data Path: reset to UARTWithFIFO1/TXbuffer/wrPTR_4_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            86   1.328   2.100  reset_IBUF (reset_IBUF)
+     LUT5:I4->O            2   0.254   0.725  UARTWithFIFO1/TXbuffer/reset_wrPTR[4]_AND_10_o1 (UARTWithFIFO1/TXbuffer/reset_wrPTR[4]_AND_10_o)
+     LDC:CLR                   0.459          UARTWithFIFO1/TXbuffer/wrPTR_4_LDC
+    ----------------------------------------
+    Total                      4.866ns (2.041ns logic, 2.825ns route)
+                                       (41.9% logic, 58.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clkcntr_4'
@@ -586,45 +1648,221 @@ Offset:              4.118ns (Levels of Logic = 1)
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock UARTWithFIFO1/RXbuffer/wrPTR[5]_wrPTR[5]_MUX_14_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clkcntr_4      |         |         |    2.594|         |
----------------+---------+---------+---------+---------+
+Clock to Setup on destination clock UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_19_o
+------------------------------------------------+---------+---------+---------+---------+
+                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_19_o|         |         |    3.099|         |
+clkcntr_4                                       |         |         |    3.946|         |
+------------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock UARTWithFIFO1/TXbuffer/wrPTR[5]_wrPTR[5]_MUX_14_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clkcntr_4      |         |         |    2.337|         |
----------------+---------+---------+---------+---------+
+Clock to Setup on destination clock UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_21_o
+------------------------------------------------+---------+---------+---------+---------+
+                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_21_o|         |         |    3.099|         |
+clkcntr_4                                       |         |         |    3.946|         |
+------------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock UARTWithFIFO1/txlink_statereg_FSM_FFd1
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clkcntr_4      |    1.790|         |         |         |
----------------+---------+---------+---------+---------+
+Clock to Setup on destination clock UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_23_o
+------------------------------------------------+---------+---------+---------+---------+
+                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_23_o|         |         |    3.205|         |
+clkcntr_4                                       |         |         |    3.946|         |
+------------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock UARTWithFIFO1/txlink_statereg_FSM_FFd2
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clkcntr_4      |    1.326|         |         |         |
----------------+---------+---------+---------+---------+
+Clock to Setup on destination clock UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_25_o
+------------------------------------------------+---------+---------+---------+---------+
+                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_25_o|         |         |    3.099|         |
+clkcntr_4                                       |         |         |    3.946|         |
+------------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock UARTWithFIFO1/uart1/rx_busy
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clkcntr_4      |         |         |    1.859|         |
----------------+---------+---------+---------+---------+
+Clock to Setup on destination clock UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_27_o
+------------------------------------------------+---------+---------+---------+---------+
+                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_27_o|         |         |    3.099|         |
+clkcntr_4                                       |         |         |    3.946|         |
+------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_29_o
+------------------------------------------------+---------+---------+---------+---------+
+                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_29_o|         |         |    3.171|         |
+clkcntr_4                                       |         |         |    3.946|         |
+------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UARTWithFIFO1/RXbuffer/reset_wrPTR[0]_AND_17_o
+----------------------------------------------+---------+---------+---------+---------+
+                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/RXbuffer/reset_wrPTR[0]_AND_17_o|         |         |    3.171|         |
+clkcntr_4                                     |         |         |    3.520|         |
+----------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UARTWithFIFO1/RXbuffer/reset_wrPTR[1]_AND_15_o
+----------------------------------------------+---------+---------+---------+---------+
+                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/RXbuffer/reset_wrPTR[1]_AND_15_o|         |         |    3.099|         |
+clkcntr_4                                     |         |         |    3.520|         |
+----------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UARTWithFIFO1/RXbuffer/reset_wrPTR[2]_AND_13_o
+----------------------------------------------+---------+---------+---------+---------+
+                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/RXbuffer/reset_wrPTR[2]_AND_13_o|         |         |    3.136|         |
+clkcntr_4                                     |         |         |    3.520|         |
+----------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UARTWithFIFO1/RXbuffer/reset_wrPTR[3]_AND_11_o
+----------------------------------------------+---------+---------+---------+---------+
+                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/RXbuffer/reset_wrPTR[3]_AND_11_o|         |         |    3.099|         |
+clkcntr_4                                     |         |         |    3.520|         |
+----------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UARTWithFIFO1/RXbuffer/reset_wrPTR[4]_AND_9_o
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/RXbuffer/reset_wrPTR[4]_AND_9_o|         |         |    3.136|         |
+clkcntr_4                                    |         |         |    3.520|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UARTWithFIFO1/RXbuffer/reset_wrPTR[5]_AND_7_o
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/RXbuffer/reset_wrPTR[5]_AND_7_o|         |         |    3.099|         |
+clkcntr_4                                    |         |         |    3.520|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_19_o
+------------------------------------------------+---------+---------+---------+---------+
+                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_19_o|         |         |    3.099|         |
+clkcntr_4                                       |         |         |    3.602|         |
+------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_21_o
+------------------------------------------------+---------+---------+---------+---------+
+                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_21_o|         |         |    3.099|         |
+clkcntr_4                                       |         |         |    3.602|         |
+------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_23_o
+------------------------------------------------+---------+---------+---------+---------+
+                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_23_o|         |         |    3.205|         |
+clkcntr_4                                       |         |         |    3.602|         |
+------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_25_o
+------------------------------------------------+---------+---------+---------+---------+
+                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_25_o|         |         |    3.099|         |
+clkcntr_4                                       |         |         |    3.602|         |
+------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_27_o
+------------------------------------------------+---------+---------+---------+---------+
+                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_27_o|         |         |    3.099|         |
+clkcntr_4                                       |         |         |    3.602|         |
+------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_29_o
+------------------------------------------------+---------+---------+---------+---------+
+                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_29_o|         |         |    3.205|         |
+clkcntr_4                                       |         |         |    3.602|         |
+------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UARTWithFIFO1/TXbuffer/reset_wrPTR[0]_AND_17_o
+----------------------------------------------+---------+---------+---------+---------+
+                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/TXbuffer/reset_wrPTR[0]_AND_17_o|         |         |    3.171|         |
+clkcntr_4                                     |         |         |    3.520|         |
+----------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UARTWithFIFO1/TXbuffer/reset_wrPTR[1]_AND_15_o
+----------------------------------------------+---------+---------+---------+---------+
+                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/TXbuffer/reset_wrPTR[1]_AND_15_o|         |         |    3.099|         |
+clkcntr_4                                     |         |         |    3.520|         |
+----------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UARTWithFIFO1/TXbuffer/reset_wrPTR[2]_AND_13_o
+----------------------------------------------+---------+---------+---------+---------+
+                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/TXbuffer/reset_wrPTR[2]_AND_13_o|         |         |    3.136|         |
+clkcntr_4                                     |         |         |    3.520|         |
+----------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UARTWithFIFO1/TXbuffer/reset_wrPTR[3]_AND_11_o
+----------------------------------------------+---------+---------+---------+---------+
+                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/TXbuffer/reset_wrPTR[3]_AND_11_o|         |         |    3.099|         |
+clkcntr_4                                     |         |         |    3.520|         |
+----------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UARTWithFIFO1/TXbuffer/reset_wrPTR[4]_AND_9_o
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/TXbuffer/reset_wrPTR[4]_AND_9_o|         |         |    3.136|         |
+clkcntr_4                                    |         |         |    3.520|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UARTWithFIFO1/TXbuffer/reset_wrPTR[5]_AND_7_o
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/TXbuffer/reset_wrPTR[5]_AND_7_o|         |         |    3.099|         |
+clkcntr_4                                    |         |         |    3.520|         |
+---------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
 ---------------+---------+---------+---------+---------+
@@ -635,29 +1873,48 @@ clk            |    2.375|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clkcntr_4
--------------------------------------------------+---------+---------+---------+---------+
-                                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
--------------------------------------------------+---------+---------+---------+---------+
-UARTWithFIFO1/RXbuffer/wrPTR[5]_wrPTR[5]_MUX_14_o|         |    1.336|         |         |
-UARTWithFIFO1/TXbuffer/wrPTR[5]_wrPTR[5]_MUX_14_o|         |    1.336|         |         |
-UARTWithFIFO1/txlink_statereg_FSM_FFd1           |    3.224|         |         |         |
-UARTWithFIFO1/txlink_statereg_FSM_FFd2           |    2.842|         |         |         |
-UARTWithFIFO1/uart1/rx_busy                      |         |    1.280|         |         |
-clkcntr_4                                        |    4.190|         |         |         |
--------------------------------------------------+---------+---------+---------+---------+
+------------------------------------------------+---------+---------+---------+---------+
+                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------+---------+---------+---------+---------+
+UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_19_o|         |    5.249|         |         |
+UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_21_o|         |    5.526|         |         |
+UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_23_o|         |    5.478|         |         |
+UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_25_o|         |    5.555|         |         |
+UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_27_o|         |    5.381|         |         |
+UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_29_o|         |    5.200|         |         |
+UARTWithFIFO1/RXbuffer/reset_wrPTR[0]_AND_17_o  |         |    5.305|         |         |
+UARTWithFIFO1/RXbuffer/reset_wrPTR[1]_AND_15_o  |         |    5.454|         |         |
+UARTWithFIFO1/RXbuffer/reset_wrPTR[2]_AND_13_o  |         |    5.437|         |         |
+UARTWithFIFO1/RXbuffer/reset_wrPTR[3]_AND_11_o  |         |    5.541|         |         |
+UARTWithFIFO1/RXbuffer/reset_wrPTR[4]_AND_9_o   |         |    5.600|         |         |
+UARTWithFIFO1/RXbuffer/reset_wrPTR[5]_AND_7_o   |         |    5.274|         |         |
+UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_19_o|         |    5.711|         |         |
+UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_21_o|         |    5.655|         |         |
+UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_23_o|         |    5.515|         |         |
+UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_25_o|         |    5.647|         |         |
+UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_27_o|         |    5.726|         |         |
+UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_29_o|         |    5.475|         |         |
+UARTWithFIFO1/TXbuffer/reset_wrPTR[0]_AND_17_o  |         |    5.613|         |         |
+UARTWithFIFO1/TXbuffer/reset_wrPTR[1]_AND_15_o  |         |    5.751|         |         |
+UARTWithFIFO1/TXbuffer/reset_wrPTR[2]_AND_13_o  |         |    5.638|         |         |
+UARTWithFIFO1/TXbuffer/reset_wrPTR[3]_AND_11_o  |         |    5.645|         |         |
+UARTWithFIFO1/TXbuffer/reset_wrPTR[4]_AND_9_o   |         |    5.669|         |         |
+UARTWithFIFO1/TXbuffer/reset_wrPTR[5]_AND_7_o   |         |    5.736|         |         |
+clkcntr_4                                       |    5.590|         |         |         |
+------------------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.18 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.53 secs
  
 --> 
 
 Total memory usage is 4475796 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   10 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
 Number of infos    :    5 (   0 filtered)
 

@@ -63,7 +63,7 @@ BEGIN
 		VARIABLE count_baud	:	INTEGER RANGE 0 TO clk_freq/baud_rate-1 := 0;			--counter to determine baud rate period
 		VARIABLE count_os		:	INTEGER RANGE 0 TO clk_freq/baud_rate/os_rate-1 := 0;	--counter to determine oversampling period
 	BEGIN
-		IF(reset_n = '0') THEN											--asynchronous reset asserted
+		IF(reset_n = '1') THEN											--asynchronous reset asserted
 			baud_pulse <= '0';												--reset baud rate pulse
 			os_pulse <= '0';													--reset oversampling rate pulse
 			count_baud := 0;													--reset baud period counter
@@ -90,11 +90,11 @@ BEGIN
 	END PROCESS;
 
 	--receive state machine
-	PROCESS(reset_n, clk)
+	PROCESS(reset_n, clk, os_pulse)
 			VARIABLE rx_count	:	INTEGER RANGE 0 TO parity+d_width+2 := 0;		--count the bits received
 			VARIABLE	os_count	:	INTEGER RANGE 0 TO os_rate-1 := 0;				--count the oversampling rate pulses
 	BEGIN
-		IF(reset_n = '0') THEN																--asynchronous reset asserted
+		IF(reset_n = '1') THEN																--asynchronous reset asserted
 			os_count := 0;																			--clear oversampling pulse counter
 			rx_count := 0;																			--clear receive bit counter
 			rx_busy <= '0';																		--clear receive busy signal
@@ -151,7 +151,7 @@ BEGIN
 	PROCESS(reset_n, clk)
 		VARIABLE tx_count		:	INTEGER RANGE 0 TO parity+d_width+3 := 0;  --count bits transmitted
 	BEGIN
-		IF(reset_n = '0') THEN																--asynchronous reset asserted
+		IF(reset_n = '1') THEN																--asynchronous reset asserted
 			tx_count := 0;																			--clear transmit bit counter
 			tx <= '1';																				--set tx pin to idle value of high
 			tx_busy <= '1';																		--set transmit busy signal to indicate unavailable

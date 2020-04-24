@@ -1,4 +1,0 @@
-vhdl isim_temp "ipcore_dir/Blockram.vhd"
-vhdl isim_temp "uartLogic.vhd"
-vhdl isim_temp "FIFOBuffer.vhd"
-vhdl isim_temp "UartWithFifo.vhd"

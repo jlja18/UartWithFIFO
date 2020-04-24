@@ -35,7 +35,7 @@ entity UARTecho is
 		clk : in  STD_LOGIC;
 		urx : in STD_LOGIC;
 		utx : out STD_LOGIC;
-		reset : in STD_LOGIC
+		reset : in STD_LOGIC := '1'
 	 );
 end UARTecho;
 
@@ -58,7 +58,8 @@ end component;
 SIGNAL clkcntr : STD_LOGIC_VECTOR(4 downto 0) := "00000";
 SIGNAL data : STD_LOGIC_VECTOR(7 downto 0) := "00000000";
 SIGNAL downclk : STD_LOGIC;
-SIGNAL dataReady, dataFull, MSB_LSB, WE, RE : STD_LOGIC := '0';
+SIGNAL dataReady, dataFull, WE, RE : STD_LOGIC := '0';
+SIGNAL MSB_LSB : STD_LOGIC := '1';
 
 begin
 downclk <= clkcntr(4);

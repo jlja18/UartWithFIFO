@@ -1,4 +1,0 @@
-vhdl work "ipcore_dir/Blockram.vhd"
-vhdl work "uartLogic.vhd"
-vhdl work "FIFOBuffer.vhd"
-vhdl work "UartWithFifo.vhd"

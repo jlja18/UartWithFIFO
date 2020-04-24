@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "secureip" -o "E:/GitHub/UartWithFIFO/test1_isim_beh.exe" -prj "E:/GitHub/UartWithFIFO/test1_beh.prj" "work.test1" 

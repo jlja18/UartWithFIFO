@@ -46,7 +46,8 @@ component FIFOBuffer is
 				  WE : in STD_LOGIC; 
 				  RE : in STD_LOGIC; 
 				  dataReady : out STD_LOGIC;
-				  Full : out STD_LOGIC
+				  Full : out STD_LOGIC;
+				  reset : in STD_LOGIC 
 				  ); 	  
 end component; 
  
@@ -106,7 +107,9 @@ port map(
 	WE => WE, 
 	RE => tx_re,
 	dataReady => tx_dataready, 
-	full => full); 
+	full => full,
+	reset => reset
+	); 
 	
 RXbuffer : FIFObuffer 
 port map(
@@ -116,13 +119,14 @@ dataOUT => dataOUT,
 WE => rx_we,
 RE => RE,
 dataReady => dataReady,
-full => rx_full
+full => rx_full,
+reset => reset
 ); 
 	
 uart1 : uart 
 port map(
 clk => clk,
-reset_n => not reset,
+reset_n => reset,
 tx_ena => tx_ena,
 tx_data => tx_data_conv,
 rx => rx,
@@ -134,16 +138,24 @@ tx => tx);
 
 --tx buffer to uart link FSM
 
-process(clk)
+process(clk, reset)
 begin 
-	if rising_edge(clk) then
-		txlink_statereg <= txlink_statenext; 
-		rxlink_statereg <= rxlink_statenext; 
-	end if; 
+if rising_edge(clk) then
+		if reset = '1' then 
+			txlink_statereg <= s0; 
+			rxlink_statereg <= s0; 
+		else
+			txlink_statereg <= txlink_statenext; 
+			rxlink_statereg <= rxlink_statenext; 
+		end if;
+end if;
 end process;  
 -- next state logic
 process(txlink_statereg, tx_busy, tx_dataready)
 begin
+		tx_re <= '0'; 
+		tx_ena <= '0'; 
+		txlink_statenext <= s0; 
 	case txlink_statereg is
 		when s0 => 
 			tx_re <='0'; 
@@ -192,6 +204,6 @@ end process;
 --MSB/LSB converter 
 with MSB_LSB select tx_data_conv <=
 	tx_data when '0',
-	reverse_vector(tx_data) when'1',
+	reverse_vector(tx_data) when'1', 
 	tx_data when others;
 end Behavioral;
