@@ -92,7 +92,7 @@ BEGIN
 	wait for 90 us; 
 	urx <= '1'; 
 	wait for 90*7 us;
-	urx <= '0'; 
+	urx <= '1'; 
 	wait for 90 us; 
 	urx <= '1'; 
 	wait for 90 us; 

@@ -1,117 +1,13 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Apr 24 15:27:22 2020
+Fri Apr 24 19:26:07 2020
 
 drc -z UARTecho.ncd UARTecho.pcf
 
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/TXbuffer/wrPTR[5]_reset_MUX_22_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/RXbuffer/wrPTR[5]_reset_MUX_22_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_30_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/TXbuffer/reset_wrPTR[3]_AND_12_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_24_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/TXbuffer/reset_wrPTR[0]_AND_18_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/RXbuffer/reset_wrPTR[3]_AND_12_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_28_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/RXbuffer/reset_wrPTR[0]_AND_18_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_22_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_28_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/TXbuffer/reset_wrPTR[4]_AND_10_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_22_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/TXbuffer/reset_wrPTR[1]_AND_16_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/RXbuffer/reset_wrPTR[4]_AND_10_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_26_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/RXbuffer/reset_wrPTR[1]_AND_16_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_20_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_26_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/TXbuffer/reset_wrPTR[5]_AND_8_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/RXbuffer/GND_7_o_rePTR[5]_AND_20_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/TXbuffer/reset_wrPTR[2]_AND_14_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/RXbuffer/reset_wrPTR[5]_AND_8_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_24_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/RXbuffer/reset_wrPTR[2]_AND_14_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   UARTWithFIFO1/TXbuffer/GND_7_o_rePTR[5]_AND_30_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
    (RAMB8BWER).  9K Block RAM initialization data, both user defined and
    default, may be incorrect and should not be used.  For more information,
    please reference Xilinx Answer Record 39999.
-DRC detected 0 errors and 27 warnings.  Please see the previously displayed
+DRC detected 0 errors and 1 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

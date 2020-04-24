@@ -29,8 +29,7 @@ Compiling architecture behavioral of entity UartWithFifo [uartwithfifo_default]
 Compiling architecture behavioral of entity UARTecho [uartecho_default]
 Compiling architecture behavior of entity echotester
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
 Compiled 27 VHDL Units
 Built simulation executable E:/GitHub/UartWithFIFO/FPGAtester/echotester_isim_beh.exe
-Fuse Memory Usage: 39900 KB
-Fuse CPU Usage: 499 ms
+Fuse Memory Usage: 39940 KB
+Fuse CPU Usage: 546 ms

@@ -5,25 +5,31 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\GitHub\UartWithFIFO\FPGAtester\UartWithFifo.vhd</arg>&quot; line <arg fmt="%s" index="2">114</arg>: Output port &lt;<arg fmt="%s" index="3">Full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RXbuffer</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"E:\GitHub\UartWithFIFO\FPGAtester\UARTecho.vhd" Line 62: Using initial value <arg fmt="%s" index="1">&apos;1&apos;</arg> for <arg fmt="%s" index="2">msb_lsb</arg> since it is never assigned
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\GitHub\UartWithFIFO\FPGAtester\UartWithFifo.vhd</arg>&quot; line <arg fmt="%s" index="2">126</arg>: Output port &lt;<arg fmt="%s" index="3">rx_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uart1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\GitHub\UartWithFIFO\FPGAtester\UARTecho.vhd</arg>&quot; line <arg fmt="%s" index="2">84</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">UARTWithFIFO1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">rx_buffer_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">uart1</arg>&gt;.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\GitHub\UartWithFIFO\FPGAtester\UartWithFifo.vhd</arg>&quot; line <arg fmt="%s" index="2">114</arg>: Output port &lt;<arg fmt="%s" index="3">Full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RXbuffer</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uart1/rx_error</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UartWithFifo</arg>&gt;.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\GitHub\UartWithFIFO\FPGAtester\UartWithFifo.vhd</arg>&quot; line <arg fmt="%s" index="2">126</arg>: Output port &lt;<arg fmt="%s" index="3">rx_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uart1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uart1/rx_buffer_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UartWithFifo</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">rx_buffer_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">uart1</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">uart1/rx_busy</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">UartWithFifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;uart1/rx_state&gt; </arg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UARTWithFIFO1/uart1/rx_error</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UARTecho</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">UARTWithFIFO1/uart1/rx_buffer_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UARTecho</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">UARTWithFIFO1/uart1/rx_busy</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">UARTecho</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;UARTWithFIFO1/uart1/rx_state&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 </msg>
 
 </messages>
