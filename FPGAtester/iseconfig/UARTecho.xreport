@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-04-24T19:27:27</DateModified>
+  <DateModified>2020-04-27T11:04:39</DateModified>
   <ModuleName>UARTecho</ModuleName>
   <SummaryTimeStamp>2020-04-24T19:26:33</SummaryTimeStamp>
   <SavedFilePath>E:/GitHub/UartWithFIFO/FPGAtester/iseconfig/UARTecho.xreport</SavedFilePath>
